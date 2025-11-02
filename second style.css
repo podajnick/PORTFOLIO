@@ -1,0 +1,63 @@
+section img {
+	width: calc(305px*1.25);
+	height: calc(424px*1.25);
+}
+
+p {
+	font-size: 14pt;
+    text-align: justify;
+	font-weight: lighter;
+ 	font-family: 'Arial Narrow';
+    line-height: 1.15em;
+	color: rgb(102,102,102);
+}
+
+ul {
+    list-style: none;
+    margin: 240px 0;
+}
+
+li {
+    font-size: 25pt;
+ 	font-family: Arial;
+    line-height: 1.15em;
+	color: rgb(102,102,102);
+    margin-bottom: 5px;
+}
+
+ul img {
+    width: 64px;
+    height: 64px;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+body {
+    background-color: rgb(38,38,38);
+}
+
+section {
+    background-color: inherit;
+}
+
+.mnietlo {
+    width: 1000px;
+    margin: 30px auto;
+    display: flex;   
+    justify-content: space-between;
+}
+
+.codrops-demos a:hover,
+.codrops-demos a:focus,
+.codrops-demos a.current-demo {
+	color: white;
+	background: rgb(38,38,38);
+	font-weight: bolder;
+	border-color: none;
+}
+
+.opis {
+	margin: 0;
+    padding: 50px;
+    padding-right: 0;
+}
