@@ -1,38 +1,46 @@
 section img {
-	width: calc(305px*1.0);
-	height: calc(424px*1.0);
+	width: calc(305px*0.91);
+	height: calc(424px*0.91);
 }
 
 h3 {
-	font-family: "PT Sans Narrow", sans-serif;
-    font-weight: 400;
+	font-weight: 200;
     font-style: normal;
-    font-size: 14pt;
+    font-size: 15pt;
     text-align: justify;
-	font-weight: lighter;
-    line-height: 1.15em;
-	color: rgb(218,218,218);
+	font-weight: 200;
+    word-spacing: 0.3em;
+    line-height: 1.3em;
+	color: rgb(102,102,102);
+}
+
+.opis {
+	margin: 0;
+    padding: 30px;
+    padding-right: 0;
 }
 
 ul {
     list-style: none;
-    width: calc(950px*0.618);
+    width: 61.8%;
     margin: 0 auto;
-    padding: 30px;
-    background-color: rgb(38,38,38);
+    padding: 30px 0;
 }
 
 li {
-    font-size: 22pt;
-    line-height: 1.15em;
+    margin-bottom: 1em;
+	font-weight: 400;
+    font-style: normal;
+    font-size: 10pt;
+	font-weight: 200;
+    letter-spacing: 0.1em;
 	color: rgb(218,218,218);
-    margin-bottom: 15px;
 }
 
 ul img {
-    width: 64px;
-    height: 64px;
-    margin-right: 20px;
+    width: 32px;
+    height: auto;
+    margin-right: 1em;
     vertical-align: middle;
 }
 
@@ -45,12 +53,11 @@ section {
 }
 
 .mnietlo {
-    width: 950px;
+    width: 61.8%;
     margin: 0 auto;
-    padding: 30px;
+    padding-top: 163px;
     display: flex;   
     justify-content: space-between;
-    height: 100%;
 }
 
 .klikajki a {
@@ -69,13 +76,16 @@ section {
 	border-color: none;
 }
 
-.opis {
-	margin: 0;
-    padding: 30px;
-    padding-right: 0;
-}
-
 footer.stopkav2 {
 	background-color: none;
-	background: linear-gradient(0deg,rgba(255, 255, 255, 1) 0%, rgba(218, 218, 218, 1) 40%);
+	background: linear-gradient(0deg,rgba(218, 218, 218, 0) 0%, rgba(218, 218, 218, 0) 100%);
+}
+
+footer.stopkav2 p {
+    width: 61.8%;
+    border-top: 1px solid rgb(218,218,218);
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 1em;
 }
