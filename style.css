@@ -3,14 +3,14 @@ audio,canvas,video{display:inline-block;}
 audio:not([controls]){display:none;height:0;}
 [hidden]{display:none;}
 
-html{font-family:'Arial Narrow';-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+html{font-family:Arial;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
 body{margin:0;}
 
 a:focus{outline:thin dotted;}
 a:active,a:hover{outline:0;}
 
 h1{font-size:56pt;margin: 0;color: rgb(38,38,38)}
-h2 {font-family:Arial;font-size: 20pt;}
+h2 {font-size: 20pt;}
 abbr[title]{border-bottom:1px dotted;}
 b,strong{font-weight:bold;}
 dfn{font-style:italic;}
@@ -88,7 +88,6 @@ h6 {
 	font-size: 12pt;
 	display: flex;
 	font-weight: lighter;
- 	font-family: Arial;
 	color: rgb(102,102,102);
 	margin: 0;
 	justify-content: space-between;
@@ -305,4 +304,5 @@ figure.effect-ming:hover img {
 		margin: 10px auto;
 		width: 100%;
 	}
+
 }
