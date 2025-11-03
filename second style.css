@@ -1,30 +1,32 @@
 section img {
-	width: calc(305px*1.25);
-	height: calc(424px*1.25);
+	width: calc(305px*1.0);
+	height: calc(424px*1.0);
 }
 
-p {
+h3 {
 	font-family: "PT Sans Narrow", sans-serif;
     font-weight: 400;
     font-style: normal;
-	font-size: 14pt;
+    font-size: 14pt;
     text-align: justify;
 	font-weight: lighter;
     line-height: 1.15em;
-	color: rgb(102,102,102);
+	color: rgb(218,218,218);
 }
 
 ul {
     list-style: none;
-    margin: 240px 0;
+    width: calc(950px*0.618);
+    margin: 0 auto;
+    padding: 30px;
+    background-color: rgb(38,38,38);
 }
 
 li {
-    font-size: 25pt;
- 	font-family: Arial;
+    font-size: 22pt;
     line-height: 1.15em;
-	color: rgb(102,102,102);
-    margin-bottom: 5px;
+	color: rgb(218,218,218);
+    margin-bottom: 15px;
 }
 
 ul img {
@@ -43,15 +45,24 @@ section {
 }
 
 .mnietlo {
-    width: 1000px;
-    margin: 30px auto;
+    width: 950px;
+    margin: 0 auto;
+    padding: 30px;
     display: flex;   
     justify-content: space-between;
+    height: 100%;
 }
 
-.codrops-demos a:hover,
-.codrops-demos a:focus,
-.codrops-demos a.current-demo {
+.klikajki a {
+	border: 1px solid rgb(38,38,38);
+    border-bottom: none;
+    font-weight: 100;
+    color: rgb(38,38,38)
+}
+
+.klikajki a:hover,
+.klikajki a:focus,
+.klikajki a.currentKlikajka {
 	color: white;
 	background: rgb(38,38,38);
 	font-weight: bolder;
@@ -60,7 +71,11 @@ section {
 
 .opis {
 	margin: 0;
-    padding: 50px;
+    padding: 30px;
     padding-right: 0;
+}
 
+footer.stopkav2 {
+	background-color: none;
+	background: linear-gradient(0deg,rgba(255, 255, 255, 1) 0%, rgba(218, 218, 218, 1) 40%);
 }
