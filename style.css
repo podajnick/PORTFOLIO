@@ -337,3 +337,19 @@ footer {
 .klikajki-projekty span {
 	vertical-align: middle;
 }
+
+section.tytulProjektu {
+	margin: 15px auto;
+}
+
+section.wizki img {
+	width: 61.8%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+}
+
+section.wizki img.wizkaTop {
+	padding-top: 100px;
+}
