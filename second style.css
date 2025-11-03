@@ -4,10 +4,12 @@ section img {
 }
 
 p {
+	font-family: "PT Sans Narrow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 	font-size: 14pt;
     text-align: justify;
 	font-weight: lighter;
- 	font-family: 'Arial Narrow';
     line-height: 1.15em;
 	color: rgb(102,102,102);
 }
@@ -60,4 +62,5 @@ section {
 	margin: 0;
     padding: 50px;
     padding-right: 0;
+
 }
