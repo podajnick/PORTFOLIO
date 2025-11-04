@@ -137,8 +137,9 @@ section.siatka {
 	position: relative; /* tytuły na liscie */
 	float: left; /* od której zaczynaja sie projekty */
 	overflow: hidden;  /* widocznosc wjazdu poza ramkami */
-	margin: 10px 1%;
+	margin: 10px 1em;
 	min-width: 320px;
+	min-height: 320px;
 	max-width: 480px;
 	max-height: 360px;
 	width: 30%;
