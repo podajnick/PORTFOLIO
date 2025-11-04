@@ -264,15 +264,6 @@ figure.menuProjekty:hover img {
 	opacity: 65%;
 }
 
-@media screen and (max-width: 50em) {
-	.siatka figure {
-		display: inline-block;
-		float: none;
-		margin: 10px auto;
-		width: 95%;
-	}
-}
-
 footer {
 	clear: both;
     margin: 0 auto;
@@ -353,4 +344,16 @@ section.wizki img {
 
 section.wizki img.wizkaTop {
 	padding-top: 100px;
+}
+
+@media screen and (max-width: 50em) {
+	.siatka figure {
+		display: inline-block;
+		float: none;
+		margin: 10px auto;
+		width: 95%;
+	}
+	{.header, .footer {
+		width: 100%
+	}
 }
