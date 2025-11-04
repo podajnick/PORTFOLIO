@@ -353,7 +353,11 @@ section.wizki img.wizkaTop {
 		margin: 10px auto;
 		width: 95%;
 	}
-	{.header, .footer {
+	{.footer {
+		width: 100%
+	}
+	{.footer {
 		width: 100%
 	}
 }
+
