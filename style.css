@@ -196,7 +196,7 @@ section.siatka {
 }
 
 .siatka figure p {
-	letter-spacing: 1px;
+	letter-spacing: 0.1em;
 	font-size: 80%;
 	color: white;
 	font-weight: lighter;
@@ -360,5 +360,6 @@ section.wizki img.wizkaTop {
 		width: 100%
 	}
 }
+
 
 
