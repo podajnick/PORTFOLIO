@@ -13,7 +13,7 @@ h1 {
 	font-family: "Zalando Sans SemiExpanded", sans-serif;
 	font-weight: 700;
 	font-style: normal;
-	font-size: 32pt;
+	font-size: 34pt;
 	margin: 0;
 	padding: 0;
 	color: rgb(38,38,38)
@@ -21,63 +21,18 @@ h1 {
 
 h4 {
 	font-weight: 200;
-	font-size: 14pt;
+	font-size: 12pt;
 	margin: 0;
 	padding: 0;
 	color: rgb(38,38,38);
 }
 
-h4 img {
+.logo {
 	width: calc(0.23*234px);
 	height: auto;
 	vertical-align: middle;
 	margin-left: 15px;
 }
-
-h2 {font-size: 20pt;}
-abbr[title]{border-bottom:1px dotted;}
-b,strong{font-weight:bold;}
-dfn{font-style:italic;}
-hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0;}
-mark{background:#ff0;color:#000;}
-code,kbd,pre,samp{font-size:1em;}
-pre{white-space:pre-wrap;}
-q{quotes:"\201C" "\201D" "\2018" "\2019";}
-sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}
-sup{top:-0.5em;}
-sub{bottom:-0.25em;}
-img{border:0;}
-svg:not(:root){overflow:hidden;}
-figure{margin:0;}
-fieldset{border:1px solid rgb(218,218,218);margin:0 2px;padding:0.35em 0.625em 0.75em;}
-legend{border:0;padding:0;}
-button,input,select,textarea{font-size:100%;margin:0;}
-button,input{line-height:normal;}
-button,select{text-transform:none;}
-button,html input[type="button"],input[type="reset"],input[type="submit"]
-button[disabled],html input[disabled]{cursor:default;}
-input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;}
-input[type="search"]{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}
-input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none;}
-button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
-textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}
-
-*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
-.clearfix:before, .clearfix:after { display: table; content: ''; }
-.clearfix:after { clear: both; }
-
-body {
-	background: white;
-	padding-bottom: 60px;
-	padding-top: 50px;
-}
-
-a {
-	color: rgb(38,38,38);
-	text-decoration: none;
-}
-
-/* Header */
 
 .nawigacja {
 	padding: 15px 0;
@@ -91,17 +46,18 @@ a {
 	z-index: 1000;
 }
 
-header .naglowek {
+.naglowek {
 	display: flex;
 	justify-content: space-between;
 	width: 61.8%;
+    margin: 0 auto;
 }
 
-.naglowek {
-	margin: 0 auto;
+a {
+	color: rgb(38,38,38);
+	text-decoration: none;
 }
 
-/* Demo links */
 .klikajki {
 	text-align: center;
 }
@@ -123,27 +79,43 @@ header .naglowek {
 	border: rgb(38,38,38), solid, 3px;
 	border-bottom: none;
 }
-/* MING */
+
+footer p {
+    font-size: 8pt;
+	font-weight: lighter;
+	color: rgb(102,102,102);
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    width: 61.8%;
+    border-top: 1px solid rgb(102,102,102);
+	background-color: white;
+    margin: 0 auto;
+    margin-top: 2em;
+}
 
 section.siatka {
-	clear: both;
 	padding-top: 100px;
 	list-style: none;
 	text-align: center;
 }
 
-/* Common style */
-.siatka figure {
-	position: relative; /* tytuły na liscie */
-	float: left; /* od której zaczynaja sie projekty */
+section.siatka {
+    width: 61.8%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 0 auto;
+}
+
+.menuProjekty {
+    position: relative; /* tytuły na liscie */
 	overflow: hidden;  /* widocznosc wjazdu poza ramkami */
-	margin: 10px 1em;
-	min-width: 320px;
-	min-height: 320px;
-	max-width: 480px;
-	max-height: 360px;
-	width: 30%;
-	height: auto;
+	margin: 0;
+    max-width: 500px;
+	max-height: 357px;
+    min-height: 357px;
 	background: #3085a3;
 	text-align: center;
 	cursor: pointer;
@@ -154,7 +126,7 @@ section.siatka {
 	display: block;
 	min-height: 100%;
 	max-width: 100%;
-	opacity: 0.1;
+	opacity: 1; /* ZMIENIĆ NA 0.1 */
 }
 
 .siatka figure figcaption {
@@ -165,6 +137,14 @@ section.siatka {
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 }
+
+
+
+/* XXX */
+
+
+
+
 
 .siatka figure figcaption::before,
 .siatka figure figcaption::after {
@@ -264,20 +244,13 @@ figure.menuProjekty:hover img {
 	opacity: 65%;
 }
 
-footer {
-	clear: both;
-    margin: 0 auto;
-	padding-top: 1em;
-	font-size: 8pt;
-	display: flex;
-	font-weight: lighter;
-	color: rgb(102,102,102);
-	justify-content: center;
-	background-color: none;
-	background: linear-gradient(0deg,rgba(255, 255, 255, 1) 0%, rgba(218, 218, 218, 0) 75%);
-	position: fixed;
-	bottom: 0;
-	width: 100%;
+@media screen and (max-width: 50em) {
+	.siatka figure {
+		display: inline-block;
+		float: none;
+		margin: 10px auto;
+		width: 95%;
+	}
 }
 
 .klikajki-projekty {
@@ -345,21 +318,3 @@ section.wizki img {
 section.wizki img.wizkaTop {
 	padding-top: 100px;
 }
-
-@media screen and (max-width: 50em) {
-	.siatka figure {
-		display: inline-block;
-		float: none;
-		margin: 10px auto;
-		width: 95%;
-	}
-	{.footer {
-		width: 100%
-	}
-	{.mnietlo {
-		width: 100%
-	}
-}
-
-
-
