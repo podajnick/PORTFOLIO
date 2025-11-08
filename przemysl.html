@@ -7,24 +7,30 @@
 		<title>PORTFOLIO | Adam Dobrowolski</title>
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100;1,14..32,100&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<link rel="stylesheet" type="text/css" href="second style.css" !important/>
 	</head>
 	<body>
+        <button onclick="topFunction()" id="topButton" title="Go to top">W górę</button>
 		<header class="nawigacja">
-			<div class="klikajki-projekty">
-				<a href="index.html"><img src="png/strzalka.png"/> <span>Strona główna</span></a>
-				<span class="right"><a href="przemysl.html"><span>Następny Projekt</span><img src="png/strzalka.png" class="pr-strz"/></a></span>
+			<div class="naglowekProj">
+				<a href="index.html"><span class="strona-glowna">Strona główna</span></a>
+				<section class="naglowek"><h1>PROJEKT PRZEMYSŁU</h1></section>
+				<span class="right"><a href="przemysl.html"><span>Następny Projekt</span></a></span>
 			</div>
-			<section class="tytulProjektu"><h1>PROJEKT PRZEMYSŁU</h1></section>
 		</header>
 		<section class="wizki">
 			<img src="png/Strona 2.png" class="wizkaTop"/>
 			<img src="png/Strona 1.png"/>
 		</section>
         <footer>
-			<p>AKTUALIZACJA 11/25</p>
+            <ul>
+                <h1 class="projStopka">PORTFOLIO</h1>
+                <h4>inż. arch. Adam Dobrowolski<img src="png/logo.png" class="logo"/></h4>
+            </ul>
         </footer>
-	</body>
+        <script src="button.js"></script>
+    </body>
 </html>
