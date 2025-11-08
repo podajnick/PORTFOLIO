@@ -8,19 +8,17 @@
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100;1,14..32,100&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="style.css"/>
 	</head>
 	<body>
+        <button onclick="topFunction()" id="topButton">W górę</button>
+		<button onclick="bottomFunction()" id="contButton">Kontakt</button>
 		<header class="nawigacja">
-            <div class="naglowek"><h1>PORTFOLIO</h1><h4>inż. arch. <b>Adam Dobrowolski</b><img src="png/logo.png" class="logo"/></h4></div>
-            <nav class="klikajki">
-                <a href="index.html">PROJEKTY</a>
-                <a href="index.html">KONTAKT</a>
-            </nav>
+            <div class="naglowek"><h1>PORTFOLIO</h1><h4>inż. arch. Adam Dobrowolski<img src="png/logo.png" class="logo"/></h4></div>
         </header>
         <section class="siatka">
-            <figure class="menuProjekty projekt-01">
+            <figure class="menuProjekty" id="I">
                 <img src="png/projekty mini/przemysl.png"/>
                 <a href="przemysl.html">
                 <figcaption>
@@ -28,7 +26,7 @@
                     <p>fabryka gramofonów w mrowinie<br>koło rokietnicy</br></p>
                 </figcaption></a>
             </figure>
-            <figure class="menuProjekty projekt-02">
+            <figure class="menuProjekty" id="II">
                 <img src="png/projekty mini/gajowa.png"/>
                 <a href="przemysl.html">
                 <figcaption>
@@ -36,7 +34,7 @@
                     <p>Budynek przy ul. Gajowej 14 w Poznaniu</p>
                 </figcaption></a>
             </figure>
-			<figure class="menuProjekty projekt-03">
+            <figure class="menuProjekty" id="III">
                 <img src="png/projekty mini/leaf.png"/>
                 <a href="przemysl.html">
                 <figcaption>
@@ -44,7 +42,7 @@
                     <p>Przebudowa stadionu Szyca<br>w Poznaniu</br></p>
                 </figcaption></a>
             </figure>
-            <figure class="menuProjekty projekt-04">
+            <figure class="menuProjekty" id="IV">
                 <img src="png/projekty mini/domel.png"/>
                 <a href="przemysl.html">
                 <figcaption>
@@ -52,7 +50,7 @@
                     <p>Budynek przy ul. Chrobrego 15<br>w Czerwonaku</br></p>
                 </figcaption></a>
             </figure>
-            <figure class="menuProjekty projekt-05">
+            <figure class="menuProjekty" id="V">
                 <img src="png/projekty mini/betung.png"/>
                 <a href="przemysl.html">
                 <figcaption>
@@ -60,7 +58,7 @@
                     <p>Wielofunkcyjny obiekt z betonu</p>
                 </figcaption></a>
             </figure>
-            <figure class="menuProjekty projekt 06">
+            <figure class="menuProjekty" id="VI">
                 <img src="png/projekty mini/stolowka.png"/>
                 <a href="przemysl.html">
                 <figcaption>
@@ -68,7 +66,7 @@
                     <p>Stołówka przy ul. św. Rocha 11<br>w Poznaniu</br></p>
                 </figcaption></a>
             </figure>
-            <figure class="menuProjekty projekt-07">
+            <figure class="menuProjekty" id="VII">
                 <img src="png/projekty mini/dino.png"/>
                 <a href="przemysl.html">
                 <figcaption>
@@ -76,7 +74,7 @@
                     <p>Zagospodarowanie kampusu dino</p>
                 </figcaption></a>
             </figure>
-            <figure class="menuProjekty projekt-08">
+            <figure class="menuProjekty" id="VIII">
                 <img src="png/projekty mini/basen.png"/>
                 <a href="przemysl.html">
                 <figcaption>
@@ -84,7 +82,7 @@
                     <p>Pływalnia na Marcelinie w Poznaniu</br></p>
                 </figcaption></a>
             </figure>
-            <figure class="menuProjekty projekt-09">
+            <figure class="menuProjekty" id="IX">
                 <img src="png/projekty mini/gbp.png"/>
                 <a href="przemysl.html">
                 <figcaption>
@@ -93,29 +91,12 @@
                 </figcaption></a>
             </figure>
 		</section>
-        <section class="oMnieTlo">
-            <div class="oMnie">
-                <img src="png/ja.png" class="mojaFota"/>
-                <div><h3>
-                    W procesie projektowym przyświeca mi idea rozwiązań wynikowych,
-                    gdzie decyzje projektowe podążają za racjonalnością rozwiązań.
-                    Jestem zwolennikiem jak najbardziej zoptymalizowanego procesu
-                    projektowego, stąd moje zainteresowanie parametryką jako
-                    narzędziem wszechstronnym - od analiz i rozwiązań projektowych,
-                    po projekty wzornicze. W wolnych chwilach odkrywam niepopularne
-                    brzmienia w muzyce oraz tworzę własną. Jestem studentem
-                    ostatniego roku architektury na Politechnice Poznańskiej.
-                </h3></div>
-            </div>
-            <div>
-                <adress><ul>
-                    <li><img src="png/telephone.png"/>+48 536 838 678</li>
-                    <li><img src="png/mail.png"/>adamdobrowolski01@gmail.com</li>
-                </ul></adress>
-            </div>
-        </section>
         <footer>
-			<p>AKTUALIZACJA PORTFOLIO 11/25</p>
+            <adress><ul>
+                <li><img src="png/telephone.png"/>+48 536 838 678</li>
+                <li><img src="png/mail.png"/>adamdobrowolski01@gmail.com</li>
+            </ul></adress>
         </footer>
+        <script src="button.js"></script>
     </body>
 </html>
