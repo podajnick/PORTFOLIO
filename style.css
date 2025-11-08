@@ -97,7 +97,6 @@ section.siatka {
     display: grid;
     grid-template-columns: 33.3% 33.3% 33.3%;
     margin: 0 auto;
-	box-shadow: 1em;
 }
 
 .menuProjekty {
@@ -158,9 +157,9 @@ section.siatka {
 }
 
 figure.menuProjekty img {
-	opacity: 0.2;  /* przeswit przed najechaniem */
-	-webkit-transition: opacity 2s;
-	transition: opacity 2s;
+	opacity: 0.3;  /* przeswit przed najechaniem */
+	-webkit-transition: opacity 3s;
+	transition: opacity 3s;
 }
 
 figure.menuProjekty h2 {
@@ -179,8 +178,6 @@ figure.menuProjekty p {
 }
 
 figure.menuProjekty:hover h2 {
-	-webkit-transform: scale(0.9);
-	transform: scale(0.9);
 	color: rgb(38,38,38);
 }
 
@@ -267,10 +264,7 @@ ul img {
 }
 
 @media screen and (max-width: 50em) {
-	.siatka figure {
-		display: inline-block;
-		float: none;
-		margin: 10px auto;
-		width: 95%;
+	section.siatka {
+		display: column
 	}
 }
