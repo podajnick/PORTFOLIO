@@ -108,7 +108,6 @@ section.siatka {
     max-width: calc(1.4*16em);
 	max-height: calc(1.4*10em);
 	text-align: center;
-	cursor: pointer;
 }
 
 .siatka figure img {
@@ -133,17 +132,19 @@ section.siatka {
 	pointer-events: none;
 }
 
-.siatka figure figcaption,
-.siatka figure figcaption > a {
+.siatka figure figcaption {
 	position: absolute;
 	top: 0;
 	left: 0;
+	right: 0;
+	bottom: 0;
 }
 
 .siatka figure h2 {
 	word-spacing: 0.2em;
 	font-weight: 100;
 	color: white;
+	text-shadow: 0 0 1em rgba(38,38,38,0.5);
 }
 
 .siatka figure h2 span {
@@ -157,7 +158,7 @@ section.siatka {
 }
 
 figure.menuProjekty img {
-	opacity: 0.3;  /* przeswit przed najechaniem */
+	opacity: 0.2;  /* przeswit przed najechaniem */
 	-webkit-transition: opacity 3s;
 	transition: opacity 3s;
 }
@@ -179,6 +180,7 @@ figure.menuProjekty p {
 
 figure.menuProjekty:hover h2 {
 	color: rgb(38,38,38);
+	text-shadow: none;
 }
 
 figure.menuProjekty:hover figcaption::before,
@@ -189,9 +191,10 @@ figure.menuProjekty:hover p {
 }
 
 figure.menuProjekty:hover img {
-	opacity: 65%;
+	opacity: 60%;
 	filter: grayscale(0%);
-	transition: filter 1s;
+	transition: filter 2s;
+	-webkit-transition: filter 2s;
 }
 
 
