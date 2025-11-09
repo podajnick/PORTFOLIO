@@ -291,7 +291,7 @@ figure.menuProjekty:hover img {
 
 .nowe-okno {
 	display: block;
-	background-color: rgba(38,38,38,0.4);
+	background-color: rgba(38,38,38,0.7);
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -462,3 +462,4 @@ section.wizki img {
 	margin: 0 auto;
 	padding: 0;
 }
+
