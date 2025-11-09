@@ -4,55 +4,56 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
-		<title>PORTFOLIO | Adam Dobrowolski</title>
+		<title>proj PORTFOLIO | Adam Dobrowolski</title>
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100;1,14..32,100&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="style.css"/>
-		<link rel="stylesheet" type="text/css" href="second style.css" !important/>
 	</head>
 	<body>
-        <button onclick="topFunction()" id="topButton" title="Go to top">W górę</button>
 		<header class="nawigacja">
-			<div class="naglowekProj">
-				<button class="animated-button" id="strona-glowna">
-					<svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
-					<path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-					></path>
-					</svg>
-					<a href="index.html"><span class="text">Strona Główna</span></a>
-					<span class="circle"></span>
-					<svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
-					<path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-					></path>
-					</svg>
-				</button>
-				<section class="naglowek"><h1>PROJEKT PRZEMYSŁU</h1></section>
-				<button class="animated-button" id="next-projekt">
-					<svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
-					<path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-					></path>
-					</svg>
-					<a href="przemysl.html"><span class="text">Następny Projekt</span></a>
-					<span class="circle"></span>
-					<svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
-					<path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-					></path>
-					</svg>
-				</button>
-			</div>
-		</header>
-		<section class="wizki">
-			<img src="png/Strona 2.png" class="wizkaTop"/>
-			<img src="png/Strona 1.png"/>
-		</section>
-        <footer>
-            <ul>
-                <h1 class="projStopka">PORTFOLIO</h1>
-                <h4>inż. arch. Adam Dobrowolski<img src="png/logo.png" class="logo"/></h4>
-            </ul>
-        </footer>
-        <script src="button.js"></script>
+            <div class="naglowek-glowny"><h1>PORTFOLIO</h1><h4>inż. arch. Adam Dobrowolski<img src="png/logo.png" class="logo"/></h4></div>
+        </header>
+        <section class="nowe-okno" id="nowe-okno">
+            <div class="okno-projekt">
+                <div class="navi-projekt">
+                    <button class="exit" id="exitButton"><a href="index.html">
+                        <p>x</p></a>
+                    </button>
+                    <div class="naglowekProj">
+                        <button class="animated-button" id="previous-projekt">
+                            <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                            ></path>
+                            </svg>
+                            <span class="text">Poprzedni</span>
+                            <span class="circle"></span>
+                            <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                            ></path>
+                            </svg>
+                        </button>
+                        <section class="naglowek"><h1>PROJEKT PRZEMYSŁU</h1></section>
+                        <button class="animated-button" id="next-projekt">
+                            <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                            ></path>
+                            </svg>
+                            <span class="text">Następny</span>
+                            <span class="circle"></span>
+                            <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                            ></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <section class="wizki">
+                    <img src="png/Strona 1.png" class="wizkaTop"/>
+                    <img src="png/Strona 2.png"/>
+                </section>
+            </div>
+        </section>
     </body>
 </html>
