@@ -1,5 +1,5 @@
 html {
-	font-family:Impact, sans-serif;
+	font-family: 'Inter', sans-serif;
 	font-weight: 100;
 	-ms-text-size-adjust:100%;
 	-webkit-text-size-adjust:100%;
@@ -9,11 +9,8 @@ body {
 	margin: 0;
 }
 
-a:focus{outline:thin dotted;}
-a:active,a:hover{outline:0;}
-
 h1 {
-	font-weight: 100;
+	font-weight: 1000;
 	font-style: normal;
 	font-size: 2.5em;
 	margin: 0;
@@ -23,7 +20,7 @@ h1 {
 }
 
 h4 {
-	font-weight: 100;
+	font-weight: 600;
 	font-size: 1em;
 	margin: 0;
 	padding: 0;
@@ -91,7 +88,7 @@ ul {
 
 li {
     font-size: 1em;
-	font-weight: 200;
+	font-weight: 600;
     letter-spacing: 0.1em;
 	color: rgb(38,38,38)
 }
@@ -104,7 +101,6 @@ ul img {
 }
 
 #topButton {
-	font-family: Impact, sans-serif;
 	display: none;
 	position: fixed;
 	bottom: 20px;
@@ -117,6 +113,7 @@ ul img {
 	cursor: pointer;
 	padding: 15px;
 	font-size: 0.9em;
+	font-weight: 600;
 	text-transform: uppercase;
 	background-color: white;
 	letter-spacing: 1px;
@@ -124,7 +121,10 @@ ul img {
 }
 
 #contButton {
-	font-family: Impact, sans-serif;
+	font-size: 0.9em;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 1px;
 	display: block;
 	position: fixed;
 	bottom: 20px;
@@ -136,10 +136,7 @@ ul img {
 	color: rgb(102,102,102);
 	cursor: pointer;
 	padding: 15px;
-	font-size: 0.9em;
-	text-transform: uppercase;
 	background-color: white;
-	letter-spacing: 1px;
     color: rgb(218,218,218);
 }
 
@@ -205,7 +202,7 @@ section.siatka {
 }
 
 .siatka figure h2 {
-	font-family: Arial;
+	font-family: Arial, sans-serif;
 	font-size: 1em;
 	word-spacing: 0.2em;
 	font-weight: 100;
@@ -214,11 +211,11 @@ section.siatka {
 }
 
 .siatka figure h2 span {
-	font-weight: 750;
+	font-weight: 600;
 }
 
 .siatka figure p {
-	font-family: Arial;
+	font-family: Arial, sans-serif;
 	letter-spacing: 0.1em;
 	font-size: 61%;
 	color: white;
