@@ -253,7 +253,8 @@ figure.menuProjekty:hover img {
 		width: 95%;
 		margin: 0 auto;
 	}
-	h1, h4 {font-size: 50%}
+	h1 {font-size: 1.25em}
+	h4 {font-size: 0.5em}
 }
 
 
@@ -521,6 +522,7 @@ section.wizki img {
 	margin: 0 auto;
 	padding: 0;
 }
+
 
 
 
