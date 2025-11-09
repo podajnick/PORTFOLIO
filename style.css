@@ -249,6 +249,9 @@ figure.menuProjekty:hover img {
 		width: 95%;
 		grid-template-columns: 95%;
 	}
+	.naglowek-glowny {
+		margin: 0;
+	}
 }
 
 
@@ -516,4 +519,5 @@ section.wizki img {
 	margin: 0 auto;
 	padding: 0;
 }
+
 
