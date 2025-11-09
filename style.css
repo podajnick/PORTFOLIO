@@ -291,18 +291,20 @@ figure.menuProjekty:hover img {
 
 .nowe-okno {
 	display: block;
-	background-color: rgba(38,38,38,0.7);
+	background-color: rgba(38,38,38,0.4);
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
-	z-index: 100000;
+	z-index: 10000;
 }
 
 .okno-projekt {
 	width: 85%;
 	background-color: white;
 	margin: 6.5em auto;
+	border-radius: 30px;
+	box-shadow: 15px 15px 30px rgb(38,38,38)
 }
 
 .exit {
@@ -462,4 +464,3 @@ section.wizki img {
 	margin: 0 auto;
 	padding: 0;
 }
-
