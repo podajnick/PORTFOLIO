@@ -246,6 +246,7 @@ figure.menuProjekty:hover img {
 
 @media screen and (max-width: 50em) {
 	section.siatka {
+		width: 95%;
 		grid-template-columns: 95%;
 	}
 }
@@ -515,3 +516,4 @@ section.wizki img {
 	margin: 0 auto;
 	padding: 0;
 }
+
