@@ -29,6 +29,7 @@ h4 {
 }
 
 .logo {
+	fill: rgb(38,38,38);
 	height: 3em;
 	width: auto;
 	vertical-align: middle;
@@ -560,3 +561,4 @@ section.wizki img {
 	opacity: 1;
 	transition: filter 1s, opacity 1s;
 }
+
