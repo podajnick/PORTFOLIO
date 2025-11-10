@@ -307,7 +307,7 @@ figure.menuProjekty:hover img {
 	margin: 6.5em auto;
 	padding-bottom: 2em;
 	border-radius: 30px;
-	box-shadow: 15px 15px 30px rgb(38,38,38);
+	box-shadow: 0.5em 0.5em 2em rgb(38,38,38);
 }
 
 .navi-projekt {
@@ -530,21 +530,19 @@ section.wizki img {
 .gallery-item {
 	color: rgba(218,218,218,0.75);
 	margin: 0.8em 0.4em;
-	border: 3px solid rgb(218, 218, 218);
+	border: 3px solid transparent;
 	border-radius: 5%;
 	width: 180px;
+	background-color: white;
 	filter: grayscale(100%);
-}
-
-.gallery-item:hover {
-	border: 3px solid rgb(38,38,38);
-	filter: grayscale(0%);
+	box-shadow: 0.3em 0.3em 2em rgb(38,38,38);
 }
 
 .gallery-item img {
 	width: 100%;
 	height: auto;
 	border-radius: 5%;
+	opacity: 0.75;
 }
 
 .gallery-item div.desc {
@@ -554,4 +552,11 @@ section.wizki img {
 	text-align: center;
 	text-transform: uppercase;
 	color: rgb(38,38,38);
+}
+
+.gallery-item:hover {
+	border: 3px solid rgb(38,38,38);
+	filter: grayscale(0%);
+	opacity: 1;
+	transition: filter 1s, opacity 1s;
 }
