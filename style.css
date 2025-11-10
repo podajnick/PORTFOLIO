@@ -246,15 +246,8 @@ figure.menuProjekty:hover img {
 
 @media screen and (max-width: 50em) {
 	section.siatka {
-		width: 95%;
 		grid-template-columns: 95%;
 	}
-	.naglowek-glowny {
-		width: 95%;
-		margin: 0 auto;
-	}
-	h1 {font-size: 1.25em}
-	h4 {font-size: 0.5em}
 }
 
 
@@ -312,13 +305,15 @@ figure.menuProjekty:hover img {
 	width: 85%;
 	background-color: white;
 	margin: 6.5em auto;
+	padding-bottom: 2em;
 	border-radius: 30px;
 	box-shadow: 15px 15px 30px rgb(38,38,38);
 }
 
 .navi-projekt {
 	margin:0;
-	padding: 0.8em 0;background: transparent;
+	padding: 0.8em 0;
+	background: transparent;
 	background: linear-gradient(180deg, transparent 85%, rgb(218, 218, 218) 100%);
 }
 
@@ -513,16 +508,50 @@ span {
 
 section.wizki {
 	border-radius: 30px;
-	padding: 1em 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 section.wizki img {
-	width: 49%;
+	width: 49.55%;
 	height: auto;
-	margin: 0 auto;
+	margin: 0;
 	padding: 0;
 }
 
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
 
+.gallery-item {
+	color: rgba(218,218,218,0.75);
+	margin: 0.8em 0.4em;
+	border: 3px solid rgb(218, 218, 218);
+	border-radius: 5%;
+	width: 180px;
+	filter: grayscale(100%);
+}
 
+.gallery-item:hover {
+	border: 3px solid rgb(38,38,38);
+	filter: grayscale(0%);
+}
 
+.gallery-item img {
+	width: 100%;
+	height: auto;
+	border-radius: 5%;
+}
+
+.gallery-item div.desc {
+	font-size: 0.8em;
+	font-weight: 600;
+	padding: 15px;
+	text-align: center;
+	text-transform: uppercase;
+	color: rgb(38,38,38);
+}
