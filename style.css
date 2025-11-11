@@ -189,8 +189,7 @@ section.siatka {
 	font-size: 1em;
 	word-spacing: 0.2em;
 	font-weight: 100;
-	color: white;
-	text-shadow: 0 0 1em rgba(38,38,38,0.5);
+	color: rgb(38,38,38)
 }
 
 .siatka figure h2 span {
@@ -200,12 +199,13 @@ section.siatka {
 .siatka figure p {
 	font-family: Arial, sans-serif;
 	letter-spacing: 0.1em;
+	font-weight: 400;
 	font-size: 61%;
 	color: white;
 }
 
 figure.menuProjekty img {
-	opacity: 0.2;  /* przeswit przed najechaniem */
+	opacity: 0.1;  /* przeswit przed najechaniem */
 	-webkit-transition: opacity 3s;
 	transition: opacity 3s;
 }
@@ -214,7 +214,6 @@ figure.menuProjekty h2 {
 	margin-top: 20%;
 	-webkit-transition: -webkit-transform 0.5s;
 	transition: transform 0.5s;
-	transition: color 0.5s;
 }
 
 figure.menuProjekty p {
@@ -223,12 +222,6 @@ figure.menuProjekty p {
 	transition: opacity 0.5s, transform 0.5s;
 	-webkit-transform: scale(1.5);
 	transform: scale(1.5);
-}
-
-figure.menuProjekty:hover h2 {
-	color: rgb(38,38,38);
-	text-shadow: none;
-	transition: color 0.5s;
 }
 
 figure.menuProjekty:hover figcaption::before,
@@ -257,54 +250,53 @@ figure.menuProjekty:hover img {
 
 
 .siatka figure figcaption:hover {
-	border-bottom: 5px solid;
+	border-bottom: 15px solid;
 }
 
 
 #I figcaption:hover {
-	border-color: red;
-}
-#II figcaption:hover {
-	border-color: purple;
-}
-#III figcaption:hover {
-	border-color: orange;
-}
-#IV figcaption:hover {
-	border-color: blue;
-}
-#V figcaption:hover {
-	border-color: yellow;
-}
-#VI figcaption:hover {
-	border-color: green;
-}
-#VII figcaption:hover {
-	border-color: black;
-}
-#VIII figcaption:hover {
-	border-color: magenta;
-}
-#IX figcaption:hover {
-	border-color: cyan;
+	border-color: rgb(222,223,218);
 }
 
+#II figcaption:hover {
+	border-color: rgb(103,108,104);
+}
+#III figcaption:hover {
+	border-color: rgb(96,55,55);
+}
+#IV figcaption:hover {
+	border-color: rgb(85,81,75);
+}
+#V figcaption:hover {
+	border-color: rgb(175,153,122);
+}
+#VI figcaption:hover {
+	border-color: rgb(209,208,199);
+}
+#VII figcaption:hover {
+	border-color: rgb(238,236,232);
+}
+#VIII figcaption:hover {
+	border-color: rgb(149,151,138);
+}
+#IX figcaption:hover {
+	border-color: rgb(50,54,58);
+}
 
 
 
 .nowe-okno {
-	display: block;
 	background-color: rgba(38,38,38,0.4);
-	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
+	position: absolute;
 	z-index: 10000;
 }
 
 .okno-projekt {
 	width: 85%;
-	background-color: white;
+	background-color: rgb(238,236,232);
 	margin: 6.5em auto;
 	padding-bottom: 2em;
 	border-radius: 30px;
@@ -516,10 +508,14 @@ section.wizki {
 }
 
 section.wizki img {
-	width: 49.55%;
+	width: 49%;
 	height: auto;
 	margin: 0;
 	padding: 0;
+}
+
+section.wizki p {
+	text-align: justify;
 }
 
 .gallery {
@@ -561,4 +557,3 @@ section.wizki img {
 	opacity: 1;
 	transition: filter 1s, opacity 1s;
 }
-
