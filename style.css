@@ -53,10 +53,6 @@ h4 {
     margin: 0 auto;
 }
 
-a {
-	text-decoration: none;
-}
-
 .klikajki {
 	text-align: center;
 }
@@ -133,6 +129,7 @@ ul svg {
 }
 
 
+
 /* SIATKA *//* SIATKA *//* SIATKA *//* SIATKA *//* SIATKA *//* SIATKA *//* SIATKA *//* SIATKA *//* SIATKA */
 
 
@@ -144,7 +141,7 @@ section.siatka {
     display: grid;
     grid-template-columns: 33.3% 33.3% 33.3%;
     margin: 0 auto;
-	
+	z-index: 100;
 }
 
 .menuProjekty {
@@ -263,7 +260,6 @@ figure.menuProjekty:hover img {
 #I figcaption:hover {
 	border-color: rgb(222,223,218);
 }
-
 #II figcaption:hover {
 	border-color: rgb(103,108,104);
 }
@@ -288,11 +284,13 @@ figure.menuProjekty:hover img {
 #IX figcaption:hover {
 	border-color: rgb(50,54,58);
 }
+#X figcaption:hover {
+	border-color: rgb(222,223,218);
+}
 
 
 
 .nowe-okno {
-	display: none;
 	background-color: rgba(38,38,38,0.75);
 	top: 0;
 	left: 0;
@@ -458,13 +456,6 @@ span {
 	transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.animated-button a {
-	position: relative;
-	z-index: 1;
-	transform: translateX(-12px);
-	transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
-}
-
 .text {
 	font-weight: 400;
 	font-size: 0.9em;
@@ -488,8 +479,10 @@ span {
 	left: 16px;
 }
 
-.animated-button:hover a {
-	transform: translateX(12px);
+a {
+	text-decoration: none;
+	color: inherit;
+	display: inherit
 }
 
 .animated-button:hover svg {
