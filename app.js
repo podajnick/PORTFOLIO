@@ -17,8 +17,6 @@ function topFunction() {
 
 //nowe-okno //nowe-okno //nowe-okno //nowe-okno //nowe-okno //nowe-okno //nowe-okno //nowe-okno //nowe-okno //nowe-okno //nowe-okno
 
-let activeSlideNumber = 1
-
 let dot1 = document.querySelector("#dot1")
 let dot2 = document.querySelector("#dot2")
 let dot3 = document.querySelector("#dot3")
@@ -70,39 +68,3 @@ dot3.addEventListener("click", showSlide3)
 dot4.addEventListener("click", showSlide4)
 dot5.addEventListener("click", showSlide5)
 dot6.addEventListener("click", showSlide6)
-
-//nowe-okno //nowe-okno //nowe-okno //nowe-okno //nowe-okno //nowe-okno //nowe-okno //nowe-okno //nowe-okno //nowe-okno //nowe-okno
-
-let chooseProj1 = document.querySelector("#I")
-let chooseProj2 = document.querySelector("#II")
-let chooseProj3 = document.querySelector("#III")
-let chooseProj4 = document.querySelector("#IV")
-let chooseProj5 = document.querySelector("#V")
-let chooseProj6 = document.querySelector("#VI")
-let chooseProj7 = document.querySelector("#VII")
-let chooseProj8 = document.querySelector("#VIII")
-let chooseProj9 = document.querySelector("#IX")
-
-let noweOkno = document.querySelector(".nowe-okno")
-
-let exit = document.querySelector(".exit")
-
-let showNoweOkno = () => {
-  noweOkno.style.display = "block"
-}
-
-let zamknijOkno = () => {
-  noweOkno.style.display = "none"
-}
-
-exit.addEventListener("click", zamknijOkno)
-
-chooseProj1.addEventListener("click", showNoweOkno)
-chooseProj2.addEventListener("click", showNoweOkno)
-chooseProj3.addEventListener("click", showNoweOkno)
-chooseProj4.addEventListener("click", showNoweOkno)
-chooseProj5.addEventListener("click", showNoweOkno)
-chooseProj6.addEventListener("click", showNoweOkno)
-chooseProj7.addEventListener("click", showNoweOkno)
-chooseProj8.addEventListener("click", showNoweOkno)
-chooseProj9.addEventListener("click", showNoweOkno)
