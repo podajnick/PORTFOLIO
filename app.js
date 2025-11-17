@@ -68,3 +68,8 @@ dot3.addEventListener("click", showSlide3)
 dot4.addEventListener("click", showSlide4)
 dot5.addEventListener("click", showSlide5)
 dot6.addEventListener("click", showSlide6)
+
+
+document.querySelector("#fulskrin").addEventListener("click", (event) => {
+  document.querySelector(".slide.active").requestFullscreen();
+});
