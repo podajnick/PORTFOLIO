@@ -8,7 +8,6 @@ body {
 }
 
 h1 {
-	font-weight: 1000;
 	font-style: normal;
 	font-size: 2.5em;
 	margin: 0;
@@ -18,11 +17,15 @@ h1 {
 }
 
 h4 {
-	font-weight: 600;
+	font-weight: 100;
 	font-size: 1em;
 	margin: 0;
 	padding: 0;
 	color: rgb(38,38,38);
+}
+
+strong {
+	font-weight: 600;
 }
 
 .logo {
@@ -204,14 +207,14 @@ section.siatka {
 
 .siatka figure h2 {
 	font-family: Arial, sans-serif;
-	font-size: 0.8em;
+	font-size: 0.75em;
 	word-spacing: 0.2em;
 	font-weight: 100;
 	color: rgb(38,38,38);
 }
 
 .siatka figure h2 span {
-	font-weight: 600;
+	font-weight: 1000;
 }
 
 figure.menuProjekty img {
@@ -297,80 +300,21 @@ figure:hover {
 
 .okno-projekt {
 	width: 85%;
-	background-color: rgb(238,236,232);
+	background-color: rgb(38,38,38);
 	margin: 5em auto;
 	padding-bottom: 2em;
-	border-radius: 30px;
 	box-shadow: 0.5em 0.5em 2em rgb(38,38,38);
+}
+
+.okno-projekt h1 {
+	color: white;
+	font-weight: 100;
 }
 
 .navi-projekt {
 	margin:0;
 	padding: 0.8em 0;
 	background: transparent;
-	background: linear-gradient(180deg, transparent 85%, rgb(218, 218, 218) 100%);
-}
-
-.exit {
-	position: fixed;
-	right: 3em;
-}
-
-.exit .button {
-  display: block;
-  position: relative;
-  width: 4em;
-  height: 4em;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  outline: none;
-  background-color: transparent;
-  cursor: pointer;
-  border: 0;
-}
-
-.exit .button:before {
-  content: "";
-  position: absolute;
-  border-radius: 50%;
-  inset: 7px;
-  transition:
-    opacity 0.4s cubic-bezier(0.77, 0, 0.175, 1) 80ms,
-    transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 80ms;
-}
-
-.exit .button:after {
-  content: "";
-  position: absolute;
-  border-radius: 50%;
-  inset: 7px;
-  border: 3px solid red;
-  transform: scale(1.3);
-  opacity: 0;
-}
-
-.exit .button:hover:before,
-.exit .button:focus:before {
-  opacity: 0;
-  transform: scale(0.7);
-  transition:
-    opacity 0.2s cubic-bezier(0.165, 0.84, 0.44, 1),
-    transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-.exit .button:hover:after,
-.exit .button:focus:after {
-  opacity: 1;
-  transform: scale(1);
-  transition:
-    opacity 0.2s cubic-bezier(0.77, 0, 0.175, 1) 80ms,
-    transform 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955) 80ms;
-}
-
-.button-elem svg {
-	width: 1em;
-	height: 1em;
 }
 
 .naglowek {
@@ -403,24 +347,24 @@ span {
 	padding: 0 4em;
 	border: none;
 	background-color: transparent;
-	color: rgb(218,218,218);
+	color: white;
 	cursor: pointer;
 	overflow: hidden;
 	transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 #previous-projekt {
-	border-right: 1px solid rgb(218,218,218);
+	border-right: 3px solid white;
 }
 
 #next-projekt {
-	border-left: 1px solid rgb(218,218,218);
+	border-left: 3px solid white;
 }
 
 .animated-button svg {
 	position: absolute;
 	width: 24px;
-	fill: rgb(218,218,218);
+	fill: white;
 	z-index: 9;
 	transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
 }
@@ -452,6 +396,7 @@ span {
 }
 
 .text {
+	color: white;
 	font-weight: 400;
 	font-size: 0.9em;
 	letter-spacing: 0.3em;
@@ -463,7 +408,6 @@ span {
 .animated-button:hover {
 	box-shadow: 0 0 0 12px transparent;
 	color: rgb(38,38,38);
-	border-radius: 12px;
 }
 
 .animated-button:hover .arr-1 {
@@ -480,22 +424,24 @@ a {
 	display: inherit
 }
 
-.animated-button:hover svg {
-	fill: rgb(38,38,38);
-}
-
 .animated-button:active {
 	scale: 0.95;
-	box-shadow: 0 0 0 4px rgb(218,218,218);
+	box-shadow: 0 0 0 1px white;
+}
+
+.animated-button:hover .text {
+	color: rgb(38,38,38);
 }
 
 .animated-button:hover .circle {
 	width: 220px;
 	height: 220px;
-	opacity: 0.75;
+	opacity: 1;
 }
 
 .wizki {
+	width: 100.6%;
+	position: relative;
 	padding: 0;
 	display: flex;
 	flex-direction: column;
@@ -518,10 +464,8 @@ a {
 }
 
 .gallery-item {
-	color: rgba(218,218,218,0.75);
 	margin: 0.8em 0.4em;
-	border: 3px solid transparent;
-	border-radius: 5%;
+	border: 5px solid rgba(102,102,102, 0.5);
 	width: 180px;
 	background-color: white;
 	filter: grayscale(100%);
@@ -532,7 +476,6 @@ a {
 .gallery-item img {
 	width: 100%;
 	height: auto;
-	border-radius: 5%;
 	opacity: 0.75;
 }
 
@@ -546,10 +489,15 @@ a {
 }
 
 .gallery-item:hover {
-	border: 3px solid rgb(38,38,38);
+	border: 5px solid rgb(38,38,38);
 	filter: grayscale(0%);
 	opacity: 1;
 	transition: filter 1s, opacity 1s;
+}
+
+.gallery-item:active {
+	scale: 0.95;
+	box-shadow: 0 0 0 5px transparent;
 }
 
 #slider {
@@ -565,4 +513,66 @@ a {
 
 #slider .slide.active {
 	display: block;
+}
+
+.fullscreen-btn {
+	width: 3em;
+	height: 3em;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: transparent;
+	cursor: pointer;
+	transition: all 0.3s;
+	position: relative;
+	overflow: hidden;
+}
+
+.fullscreen-btn svg {
+	fill: rgb(38,38,38);
+	width: 100%;
+	height: 100%;
+}
+
+.fullscreen-btn:hover {
+	width: 5em;
+	height: 5em;
+	overflow: visible;
+}
+
+.tooltip {
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.753);
+	color: white;
+	padding: 5px 10px;
+	border-radius: 5px;
+	font-size: 0.8em;
+	transition: all 0.3s;
+	opacity: 0;
+}
+
+#fulskrin .tooltip {
+	top: -3em;
+}
+
+#eksit .tooltip {
+	bottom: -3em;
+}
+
+.pelny-ekran {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.exit {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.fullscreen-btn:hover .tooltip {
+	transform: translateY(2.5px);
+	opacity: 1;
 }
