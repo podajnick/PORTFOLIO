@@ -8,27 +8,16 @@
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100;1,14..32,100&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="style.css"/>
 	</head>
 	<body>
 		<header class="nawigacja">
-            <div class="naglowek-glowny"><h1>PORTFOLIO</h1><h4>inż. arch. Adam Dobrowolski<img src="LOGO.svg" class="logo"/></h4></div>
+            <div class="naglowek-glowny"><h1>PORTFOLIO</h1><h4>inż. arch. <strong>Adam Dobrowolski</strong><img src="LOGO.svg" class="logo"/></h4></div>
         </header>
         <section class="nowe-okno">
             <div class="okno-projekt">
                 <div class="navi-projekt">
-                    <div class="exit"><a href="index.html">
-                        <button class="button">
-                            <div class="button-box">
-                                <span class="button-elem">
-                                <svg svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="arrow-icon">
-                                <path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/>
-                                </svg>
-                                </span>
-                            </div>
-                        </button></a>
-                    </div>
                     <div class="naglowekProj">
                         <button class="animated-button" id="previous-projekt"><a href="02.html">
                             <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
@@ -68,6 +57,16 @@
                             <img id="slide6" class="slide" src="png/projekty/betun/Strona 6.png" />
                         </div>
                     </div>
+                        <section class="exit"><a href="index.html"><button class="fullscreen-btn" id="eksit">
+                                <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z"/>
+                                </svg><span class="tooltip">Strona Główna</span></a>
+                            </button></section>
+                            <section class="pelny-ekran"><button class="fullscreen-btn" id="fulskrin">
+                                <svg viewBox="0 0 448 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M32 32C14.3 32 0 46.3 0 64v96c0 17.7 14.3 32 32 32s32-14.3 32-32V96h64c17.7 0 32-14.3 32-32s-14.3-32-32-32H32zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7 14.3 32 32 32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H64V352zM320 32c-17.7 0-32 14.3-32 32s14.3 32 32 32h64v64c0 17.7 14.3 32 32 32s32-14.3 32-32V64c0-17.7-14.3-32-32-32H320zM448 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64H320c-17.7 0-32 14.3-32 32s14.3 32 32 32h96c17.7 0 32-14.3 32-32V352z"/>
+                                </svg><span class="tooltip">Fullscreen</span>
+                            </button></section>
                 </section>
                 </div>
                 <div class="gallery">
