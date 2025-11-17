@@ -1,8 +1,6 @@
 html {
 	font-family: 'Inter', sans-serif;
 	font-weight: 100;
-	-ms-text-size-adjust:100%;
-	-webkit-text-size-adjust:100%;
 }
 
 body {
@@ -38,7 +36,7 @@ h4 {
 
 .nawigacja {
 	padding: 1em 0;
-	background-color: rgb(238,236,232);
+	background-color: rgb(218,218,218);
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -70,9 +68,14 @@ h4 {
 }
 
 footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 	margin-top: 3em;
 	padding: 0;
-	background-color: rgb(238,236,232)
+	background-color: rgb(218,218,218);
+	z-index: 100;
+	box-shadow: 0 0 0.5em rgb(38,38,38);
 }
 
 ul {
@@ -125,7 +128,7 @@ ul svg {
 }
 
 #topButton:hover {
-	background-color: rgb(238,236,232);
+	background-color: rgb(102,102,102);
 }
 
 
@@ -134,12 +137,12 @@ ul svg {
 
 
 section.siatka {
-	padding-top: 7em;
+	padding-top: 6em;
 	list-style: none;
 	text-align: center;
 	width: 61.8%;
     display: grid;
-    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-columns: 25% 25% 25% 25%;
     margin: 0 auto;
 	z-index: 100;
 }
@@ -149,34 +152,29 @@ section.siatka {
 	float: left;
 	overflow: hidden;  /* widocznosc wjazdu poza ramkami */
 	margin: 0;
-	padding: 1em 0;
-    max-width: calc(1.4*16em);
-	max-height: calc(1.4*10em);
+    max-width: calc(1.3*16em);
+	max-height: calc(1.3*10em);
 	text-align: center;
 	cursor: pointer;
+	border: 5px solid white;
+	background-color: white;
+	box-shadow: none;
 }
 
 .siatka figure img {
 	position: relative;
-	display: block;
 	min-height: 100%;
 	max-width: 100%;
 	filter: grayscale(100%);
 }
 
 .siatka figure figcaption {
-	padding: 2em;
+	padding: 1.5em;
 	color: rgb(38,38,38);  /* kolory napisow */
 	text-transform: uppercase;
 	font-size: 1.25em;
-	border-bottom: none;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
-}
-
-.siatka figure figcaption::before,
-.siatka figure figcaption::after {
-	pointer-events: none;
 }
 
 .siatka figure figcaption {
@@ -189,22 +187,14 @@ section.siatka {
 
 .siatka figure h2 {
 	font-family: Arial, sans-serif;
-	font-size: 1em;
+	font-size: 0.8em;
 	word-spacing: 0.2em;
 	font-weight: 100;
-	color: rgb(38,38,38)
+	color: rgb(38,38,38);
 }
 
 .siatka figure h2 span {
 	font-weight: 600;
-}
-
-.siatka figure p {
-	font-family: Arial, sans-serif;
-	letter-spacing: 0.1em;
-	font-weight: 400;
-	font-size: 61%;
-	color: white;
 }
 
 figure.menuProjekty img {
@@ -219,26 +209,56 @@ figure.menuProjekty h2 {
 	transition: transform 0.5s;
 }
 
-figure.menuProjekty p {
-	opacity: 0;
-	-webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
-	transition: opacity 0.5s, transform 0.5s;
-	-webkit-transform: scale(1.5);
-	transform: scale(1.5);
+#szczegoly-button {
+	display: none;
+	font-size: 0.5em;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: white;
+	position: relative;
+	background-color: rgba(102,102,102, 0.5);
+	border-radius: 1em;
+	text-decoration: none;
+	overflow: hidden;
+	z-index: 1;
+	margin: 4em auto;
 }
 
-figure.menuProjekty:hover figcaption::before,
-figure.menuProjekty:hover p {
-	opacity: 1;
-	-webkit-transform: scale3d(1,1,1);
-	transform: scale3d(1,1,1);
+#szczegoly-button::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(38,38,38);
+	transform: translateX(-100%);
+	transition: all .3s;
+	z-index: -1;
 }
 
-figure.menuProjekty:hover img {
-	opacity: 60%;
+#szczegoly-button:hover::before {
+	transform: translateX(0);
+}
+
+figure.menuProjekty:hover {
+	img {
+	opacity: 65%;
 	filter: grayscale(0%);
 	transition: filter 2s;
 	-webkit-transition: filter 2s;
+	} #szczegoly-button {
+		display: block;
+	}
+}
+
+figure:hover {
+	display: absolute;
+	top: 3em;
+	scale: 165%;
+	z-index: 10000;
+	border-width: 1px;
+	box-shadow: 0.5em 0.5em 2em rgb(38,38,38);
 }
 
 @media screen and (max-width: 50em) {
@@ -246,49 +266,6 @@ figure.menuProjekty:hover img {
 		grid-template-columns: 95%;
 	}
 }
-
-
-
-/* KoloryPaskow *//* KoloryPaskow *//* KoloryPaskow *//* KoloryPaskow *//* KoloryPaskow */
-
-
-.siatka figure figcaption:hover {
-	border-bottom: 15px solid;
-}
-
-
-#I figcaption:hover {
-	border-color: rgb(222,223,218);
-}
-#II figcaption:hover {
-	border-color: rgb(103,108,104);
-}
-#III figcaption:hover {
-	border-color: rgb(96,55,55);
-}
-#IV figcaption:hover {
-	border-color: rgb(85,81,75);
-}
-#V figcaption:hover {
-	border-color: rgb(175,153,122);
-}
-#VI figcaption:hover {
-	border-color: rgb(209,208,199);
-}
-#VII figcaption:hover {
-	border-color: rgb(238,236,232);
-}
-#VIII figcaption:hover {
-	border-color: rgb(149,151,138);
-}
-#IX figcaption:hover {
-	border-color: rgb(50,54,58);
-}
-#X figcaption:hover {
-	border-color: rgb(222,223,218);
-}
-
-
 
 .nowe-okno {
 	background-color: rgba(38,38,38,0.75);
