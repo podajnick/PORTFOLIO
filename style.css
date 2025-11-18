@@ -281,8 +281,7 @@ figure:hover {
 	display: absolute;
 	scale: 165%;
 	z-index: 10000;
-	border-width: 1px;
-	border-color: rgb(38,38,38);
+	border: 1px solid rgb(38,38,38);
 	box-shadow: 0.5em 0.5em 2em rgb(38,38,38);
 	transition: scale 1s;
 	-webkit-transition: scale 1s;
@@ -313,6 +312,7 @@ figure:active {
 .okno-projekt {
 	width: 85%;
 	background-color: rgb(38,38,38);
+	border-radius: 1em;
 	margin: 5em auto;
 	padding-bottom: 2em;
 	box-shadow: 0.5em 0.5em 2em rgb(38,38,38);
@@ -420,6 +420,7 @@ span {
 .animated-button:hover {
 	box-shadow: 0 0 0 12px transparent;
 	color: rgb(38,38,38);
+	border-radius: 0.5em;
 }
 
 .animated-button:hover .arr-1 {
@@ -433,7 +434,9 @@ span {
 a {
 	text-decoration: none;
 	color: inherit;
-	display: inherit
+	display: inherit;
+	margin: 0;
+	padding: 0;
 }
 
 .animated-button:active {
