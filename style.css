@@ -1,8 +1,8 @@
 html {
 	font-family: 'Inter', sans-serif;
 	font-weight: 100;
-	background-image: url("png/rysunek-1.png");
-	background-size: 89% 89%;
+	background-image: url("rysunek-1.svg");
+	background-size: 97% 97%;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -174,7 +174,6 @@ section.siatka {
 .menuProjekty {
     position: relative; /* tytuły na liscie */
 	float: left;
-	overflow: hidden;  /* widocznosc wjazdu poza ramkami */
 	margin: 0.5em;
     max-width: calc(1.3*16em);
 	max-height: calc(1.3*10em);
@@ -182,6 +181,8 @@ section.siatka {
 	cursor: pointer;
 	box-shadow: none;
 	box-shadow: 0.1em 0.1em 0.5em rgba(38,38,38, 0.2);
+	background-color: rgba(255,255,255, 0.2);
+	backdrop-filter: blur(2px);
 }
 
 .siatka figure img {
@@ -198,9 +199,6 @@ section.siatka {
 	font-size: 1.25em;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
-}
-
-.siatka figure figcaption {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -307,6 +305,7 @@ figure:active {
 	height: 113%;
 	position: absolute;
 	z-index: 10000;
+	backdrop-filter: blur(3px);
 }
 
 .okno-projekt {
