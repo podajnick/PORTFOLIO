@@ -322,6 +322,50 @@ figure:active {
 	font-weight: 100;
 }
 
+.informejszyn {
+	border: none;
+	background: none;
+}
+
+.informejszyn svg {
+	width: 1.5em;
+	height: 1.5em;
+	fill: rgba(255,255,255, 0.5);
+	border: none;
+	vertical-align: middle;
+	transition: all 0.3s;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+}
+
+.informejszyn:hover svg {
+	fill: rgba(255,255,255, 1);
+	scale: 125%;
+	overflow: visible;
+}
+
+.informejszyn .tooltip {
+	position: absolute;
+	z-index: 10000000;
+}
+
+.tooltip section {
+	display: inline-block;
+	text-align: right;
+	line-height: 1.5em;
+}
+
+.tooltip section.prawa {
+	text-align: left;
+	padding-left: 1em;
+}
+
+.informejszyn:hover .tooltip {
+	transform: translateY(2.5px);
+	opacity: 1;
+}
+
 .navi-projekt {
 	margin:0;
 	padding: 0.8em 0;
@@ -365,17 +409,17 @@ span {
 }
 
 #previous-projekt {
-	border-right: 3px solid white;
+	border-right: 3px solid rgba(255,255,255, 0.5);
 }
 
 #next-projekt {
-	border-left: 3px solid white;
+	border-left: 3px solid rgba(255,255,255, 0.5);
 }
 
 .animated-button svg {
 	position: absolute;
 	width: 24px;
-	fill: white;
+	fill: rgba(255,255,255, 0.5);
 	z-index: 9;
 	transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
 }
@@ -400,14 +444,13 @@ span {
 	transform: translate(-50%, -50%);
 	width: 20px;
 	height: 20px;
-	background-color: white;
-	border-radius: 50%;
+	background-color: rgba(255,255,255, 0.25);
 	opacity: 0;
 	transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .text {
-	color: white;
+	color: rgba(255,255,255, 0.5);
 	font-weight: 400;
 	font-size: 0.9em;
 	letter-spacing: 0.3em;
@@ -418,8 +461,6 @@ span {
 
 .animated-button:hover {
 	box-shadow: 0 0 0 12px transparent;
-	color: rgb(38,38,38);
-	border-radius: 0.5em;
 }
 
 .animated-button:hover .arr-1 {
@@ -441,10 +482,11 @@ a {
 .animated-button:active {
 	scale: 0.95;
 	box-shadow: 0 0 0 1px white;
+	border-radius: 1em;
 }
 
 .animated-button:hover .text {
-	color: rgb(38,38,38);
+	color: rgba(255,255,255, 1);
 }
 
 .animated-button:hover .circle {
@@ -517,6 +559,7 @@ a {
 #slider {
 	width: 70%;
 	height: auto;
+	position: relative;
 }
 
 #slider .slide {
@@ -557,7 +600,7 @@ a {
 
 .tooltip {
 	position: absolute;
-	background-color: rgba(0, 0, 0, 0.753);
+	background-color: rgba(0, 0, 0, 0.85);
 	color: white;
 	padding: 5px 10px;
 	border-radius: 5px;
