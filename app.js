@@ -15,7 +15,17 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+document.querySelector("#fulskrin").addEventListener("click", (event) => {
+  document.querySelector(".slide.active").requestFullscreen();
+});
+
 //nowe-okno //nowe-okno //nowe-okno //nowe-okno //nowe-okno //nowe-okno //nowe-okno //nowe-okno //nowe-okno //nowe-okno //nowe-okno
+//_________________________________________________________________________________________________________________________________
+
+
+let activeSlideNumber = 1;
+let arrowLeft = document.querySelector("#prawo");
+let arrowRight = document.querySelector("#lewo");
 
 let dot1 = document.querySelector("#dot1")
 let dot2 = document.querySelector("#dot2")
@@ -31,35 +41,51 @@ let slide4 = document.querySelector("#slide4")
 let slide5 = document.querySelector("#slide5")
 let slide6 = document.querySelector("#slide6")
 
-let showSlide1 = () => {
-    let activeElement = document.querySelector(".active");
+let hideActiveSlide = () => {
+    let activeElement = document.querySelector(".slide.active");
     activeElement.classList.remove("active");
-    slide1.classList.add("active")
+}
+
+let showSlide = (slideNumber) => {
+  hideActiveSlide();
+  document.querySelector("#slide"+slideNumber).classList.add("active")
+}
+
+let showNextSlide = () => {
+  if(activeSlideNumber === 6) {
+    activeSlideNumber = 1;
+  } else {
+      activeSlideNumber = activeSlideNumber + 1;
+    }
+  showSlide(activeSlideNumber);
+}
+
+let showPreviousSlide = () => {
+  if(activeSlideNumber === 1) {
+    activeSlideNumber = 6;
+  } else {
+      activeSlideNumber = activeSlideNumber - 1;
+    }
+  showSlide(activeSlideNumber);
+}
+
+let showSlide1 = () => {
+  showSlide(1)
 }
 let showSlide2 = () => {
-    let activeElement = document.querySelector(".active");
-    activeElement.classList.remove("active");
-    slide2.classList.add("active")
+  showSlide(2)
 }
 let showSlide3 = () => {
-    let activeElement = document.querySelector(".active");
-    activeElement.classList.remove("active");
-    slide3.classList.add("active")
+  showSlide(3)
 }
 let showSlide4 = () => {
-    let activeElement = document.querySelector(".active");
-    activeElement.classList.remove("active");
-    slide4.classList.add("active")
+  showSlide(4)
 }
 let showSlide5 = () => {
-    let activeElement = document.querySelector(".active");
-    activeElement.classList.remove("active");
-    slide5.classList.add("active")
+  showSlide(5)
 }
 let showSlide6 = () => {
-    let activeElement = document.querySelector(".active");
-    activeElement.classList.remove("active");
-    slide6.classList.add("active")
+  showSlide(6)
 }
 
 dot1.addEventListener("click", showSlide1)
@@ -69,7 +95,5 @@ dot4.addEventListener("click", showSlide4)
 dot5.addEventListener("click", showSlide5)
 dot6.addEventListener("click", showSlide6)
 
-
-document.querySelector("#fulskrin").addEventListener("click", (event) => {
-  document.querySelector(".slide.active").requestFullscreen();
-});
+arrowLeft.addEventListener("click", showNextSlide);
+arrowRight.addEventListener("click", showPreviousSlide);
