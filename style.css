@@ -416,25 +416,40 @@ span {
 	border-left: 3px solid rgba(255,255,255, 0.5);
 }
 
+#previous-projekt:hover,
+#next-projekt:hover {
+	border-color: white;
+	scale: 105%;
+}
+
 .animated-button svg {
 	position: absolute;
-	width: 24px;
+	top: 0;
+	height: 2.7em;
 	fill: rgba(255,255,255, 0.5);
 	z-index: 9;
 	transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.animated-button .arr-1 {
+#next-projekt .arr-1 {
 	right: 16px;
 }
 
-.animated-button .arr-2 {
+#next-projekt .arr-2 {
 	left: -25%;
 }
 
 #previous-projekt .arr-1,
 #previous-projekt .arr-2 {
 	rotate: 180deg;
+}
+
+#previous-projekt .arr-1 {
+	left: 16px;
+}
+
+#previous-projekt .arr-2 {
+	right: -25%;
 }
 
 .animated-button .circle {
@@ -444,7 +459,7 @@ span {
 	transform: translate(-50%, -50%);
 	width: 20px;
 	height: 20px;
-	background-color: rgba(255,255,255, 0.25);
+	background-color: none;
 	opacity: 0;
 	transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
 }
@@ -463,12 +478,22 @@ span {
 	box-shadow: 0 0 0 12px transparent;
 }
 
-.animated-button:hover .arr-1 {
+#next-projekt:hover .arr-1 {
 	right: -25%;
 }
 
-.animated-button:hover .arr-2 {
+#next-projekt:hover .arr-2 {
 	left: 16px;
+	fill: white;
+}
+
+#previous-projekt:hover .arr-1 {
+	left: -25%;
+}
+
+#previous-projekt:hover .arr-2 {
+	right: 16px;
+	fill: white;
 }
 
 a {
@@ -632,4 +657,36 @@ a {
 .fullscreen-btn:hover .tooltip {
 	transform: translateY(2.5px);
 	opacity: 1;
+}
+
+.nav-inside svg {
+	height: 5em;
+	width: auto;
+	fill: rgba(38,38,38, 0.15);
+	background-color: none;
+	transition: all 0.3s;
+}
+
+.nav-inside {
+	position: fixed;
+	top: 41vh;
+}
+
+#lewo {
+	left: 7%;
+	rotate: 180deg;
+}
+
+#prawo {
+	right: 7%;
+}
+
+.nav-inside:hover svg {
+	fill: rgba(38,38,38, 0.6);
+	scale: 110%;
+	cursor: pointer;
+}
+
+.nav-inside:active svg {
+	scale: 50%;
 }
