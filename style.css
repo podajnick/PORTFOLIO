@@ -540,7 +540,7 @@ a {
 .gallery {
 	display: flex;
 	position: fixed;
-	bottom: 0.5em;
+	bottom: 1vh;
 	width: 100%;
 }
 
@@ -553,8 +553,8 @@ a {
 
 .gallery-item {
 	margin: 0.8em 0.4em;
-	border: 5px solid rgba(102,102,102, 0.5);
-	width: 180px;
+	border: 5px solid white;
+	width: 15%;
 	background-color: white;
 	filter: grayscale(100%);
 	box-shadow: 0.3em 0.3em 2em rgb(38,38,38);
@@ -564,16 +564,17 @@ a {
 .gallery-item img {
 	width: 100%;
 	height: auto;
-	opacity: 0.75;
+	opacity: 0.4;
 }
 
 .gallery-item div.desc {
-	font-size: 0.8em;
+	font-size: 0.6em;
 	font-weight: 600;
 	padding: 15px;
 	text-align: center;
 	text-transform: uppercase;
 	color: rgb(38,38,38);
+	letter-spacing: 0.2em;
 }
 
 .gallery-item:hover {
@@ -581,11 +582,30 @@ a {
 	filter: grayscale(0%);
 	opacity: 1;
 	transition: filter 1s, opacity 1s;
+	img {
+		opacity: 1;
+		transition: 0.3s;
+	}
 }
 
 .gallery-item:active {
 	scale: 0.95;
 	box-shadow: 0 0 0 5px transparent;
+}
+
+.gallery-item.active-thumb {
+    border-color: rgb(38,38,38);
+    opacity: 1;
+    transition: all 0.3s;
+	cursor: default;
+	background-color: rgb(38, 38, 38);
+	img {
+		opacity: 0.25;
+	};
+	div.desc {
+		color: white; 
+		font-weight: 100
+	};
 }
 
 #slider {
@@ -696,4 +716,18 @@ a {
 
 .nav-inside:active svg {
 	scale: 50%;
+}
+
+.gallery-item,
+.gallery-item * {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.gallery-item:focus,
+.gallery-item:active,
+.gallery-item img:focus,
+.gallery-item img:active {
+    filter: none !important;
+    opacity: 1 !important;
 }
