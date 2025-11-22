@@ -48,7 +48,13 @@ let hideActiveSlide = () => {
 
 let showSlide = (slideNumber) => {
   hideActiveSlide();
-  document.querySelector("#slide"+slideNumber).classList.add("active")
+  document.querySelector("#slide"+slideNumber).classList.add("active");
+
+  // --- AKTYWNE PODŚWIETLENIE MINIATURY ---
+  [dot1, dot2, dot3, dot4, dot5, dot6].forEach(dot => {
+      dot.classList.remove("active-thumb");
+  });
+  document.querySelector("#dot" + slideNumber).classList.add("active-thumb");
 }
 
 let showNextSlide = () => {
@@ -97,3 +103,7 @@ dot6.addEventListener("click", showSlide6)
 
 arrowLeft.addEventListener("click", showNextSlide);
 arrowRight.addEventListener("click", showPreviousSlide);
+
+window.addEventListener("load", () => {
+    showSlide(activeSlideNumber);
+});
