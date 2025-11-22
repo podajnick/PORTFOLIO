@@ -474,6 +474,13 @@ span {
 	padding: 0;
 }
 
+#previous-projekt .text {
+	text-align: left;
+}
+#next-projekt .text {
+	text-align: right;
+}
+
 .animated-button:hover {
 	box-shadow: 0 0 0 12px transparent;
 }
