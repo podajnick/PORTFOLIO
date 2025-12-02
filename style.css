@@ -731,6 +731,7 @@ a {
 	footer {background-color: white}
 	.ramki {border: none}
 	.tooltip section {font-size: calc(1em*0.75)}
+	.naglowek-glowny {width: 81%}
 }
 
 @media screen and (max-width: 1600px) {
@@ -743,3 +744,4 @@ a {
 	html {background: none}
 	figure:hover {scale: 115%}
 }
+
