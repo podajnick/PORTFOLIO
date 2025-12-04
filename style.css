@@ -728,20 +728,23 @@ a {
 	h1 {font-size: calc(2.5em*0.5)}
 	h4, li {font-size: calc(1em*0.5)}
 	svg {width: 50%; height: 50%}
-	footer {background-color: white}
 	.ramki {border: none}
 	.tooltip section {font-size: calc(1em*0.75)}
 	.naglowek-glowny {width: 81%}
+	footer ul {width: 81%}
+	header {background-color: white}
+	footer {background-color: white}
 }
 
 @media screen and (max-width: 1600px) {
 	section.siatka {
-		grid-template-columns: 95%;
+		grid-template-columns: 100%;
 		justify-content: center;
 		padding: 0;
 		margin: 0 auto;
 	}
 	html {background: none}
 	figure:hover {scale: 115%}
+	header {background-color: white}
+	footer {background-color: white}
 }
-
