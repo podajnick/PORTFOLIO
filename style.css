@@ -744,7 +744,9 @@ a {
 		margin: 0 auto;
 	}
 	html {background: none}
+	.ramki {border: none}
 	figure:hover {scale: 115%}
 	header {background-color: white}
 	footer {background-color: white}
 }
+
