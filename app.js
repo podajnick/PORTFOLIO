@@ -1,3 +1,28 @@
+document.addEventListener("DOMContentLoaded", function() {
+    const popup = document.querySelector("#popup");
+    const closePopup = document.querySelector("#close-popup");
+
+    popup.style.display = "block"; // Pokazuje pop-up po załadowaniu strony
+
+    closePopup.addEventListener("click", function() {
+        popup.style.display = "none"; // Zamyka pop-up po kliknięciu przycisku "Zamknij"
+    });
+});
+
+function skopiujLink() {
+    const copyText = document.querySelector("#linkDoSkopiowania");
+
+    navigator.clipboard.writeText(copyText.value).then(() => {
+        alert("Link został skopiowany: " + copyText.value);
+    }).catch(err => {
+        /* Obsłuż błędy, jeśli API nie jest dostępne (np. w starszych przeglądarkach) */
+        console.error('Nie udało się skopiować tekstu: ', err);
+    });
+}
+
+//top-button //top-button //top-button //top-button //top-button //top-button //top-button //top-button //top-button //top-button
+//_______________________________________________________________________________________________________________________________
+
 let mybutton = document.getElementById("topButton");
 
 window.onscroll = function() {scrollFunction()};
@@ -21,7 +46,6 @@ document.querySelector("#fulskrin").addEventListener("click", (event) => {
 
 //nowe-okno //nowe-okno //nowe-okno //nowe-okno //nowe-okno //nowe-okno //nowe-okno //nowe-okno //nowe-okno //nowe-okno //nowe-okno
 //_________________________________________________________________________________________________________________________________
-
 
 let activeSlideNumber = 1;
 let arrowLeft = document.querySelector("#prawo");
