@@ -1,6 +1,4 @@
 html {
-	font-family: 'Inter', sans-serif;
-	font-weight: 100;
 	background-image: url("png/rysunek-1.png");
 	background-size: 89% 89%;
 	background-position: center;
@@ -747,6 +745,7 @@ a {
     transform: translate(-50%, -50%);
 	width: 50%;
     background-color: white;
+	border: 1px solid orange;
     padding: 2em;
 	padding-top: 0.5em;
 	margin: 0;
@@ -803,11 +802,21 @@ h5 {
 }
 
 .guziki:hover svg {
-	fill: rgb(38, 38, 38);
+	fill: blue;
+}
+
+#close-popup:hover svg {
+	fill: red;
 }
 
 .guziki:active {
 	scale: 95%;
+}
+
+html {
+	font-family: 'Inter', sans-serif;
+	font-weight: 100;
+	font-style: swap;
 }
 
 @media screen and (max-width: 1080px) {
