@@ -14,7 +14,10 @@
 	<body>
         <button onclick="topFunction()" class="button" id="topButton">v</button>
 		<header class="nawigacja">
-            <div class="naglowek-glowny"><h1>PORTFOLIO</h1><h4>inż. arch. <strong>Adam Dobrowolski</strong><img src="LOGO.svg" class="logo"/></h4></div>
+            <div class="naglowek-glowny">
+                <h1>PORTFOLIO</h1>
+                <h4>inż. arch. <strong>Adam Dobrowolski</strong><img src="LOGO.svg" class="logo"/></h4>
+            </div>
         </header>
         <section class="ramki">
             <section class="siatka">
@@ -84,6 +87,29 @@
                 </figure>
             </section>
         </section>
+        <div id="popup" class="popup">
+            <div class="popup-window">
+                <div class="popup-content">
+                    <div class="naglowek-glowny" id="nagl-popup">
+                        <h1>PORTFOLIO</h1>
+                        <h4>inż. arch. <strong>Adam Dobrowolski</strong><img src="LOGO.svg" class="logo"/></h4>
+                    </div>
+                    <h5>Ze względu na jakość i format prezentowanych projektów zachęcam,<br>
+                        by przeglądać stronę <strong><u>na większym ekranie</u></strong> (np. komputera lub tabletu)</h5>
+                    <input class="invi" type="text" id="linkDoSkopiowania" value="https://podajnick.github.io/PORTFOLIO/" readonly/> 
+                    <button onclick="skopiujLink()" class="guziki">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m6 18h-3c-.48 0-1-.379-1-1v-14c0-.481.38-1 1-1h14c.621 0 1 .522 1 1v3h3c.621 0 1 .522 1 1v14c0 .621-.522 1-1 1h-14c-.48 0-1-.379-1-1zm1.5-10.5v13h13v-13zm9-1.5v-2.5h-13v13h2.5v-9.5c0-.481.38-1 1-1z"/>
+                        </svg> Skopiuj link
+                    </button>
+                    <button class="guziki" id="close-popup">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z"/>
+                        </svg> Zamknij
+                    </button>
+                </div>
+            </div>
+        </div>
         <footer>
             <adress><ul>
                 <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
