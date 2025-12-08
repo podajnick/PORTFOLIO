@@ -724,6 +724,92 @@ a {
     opacity: 1 !important;
 }
 
+.invi {
+	display: none;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(38,38,38, 0.5);
+    z-index: 100000000;
+	backdrop-filter: blur(0.4em);
+}
+
+.popup-window {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	width: 50%;
+    background-color: white;
+    padding: 2em;
+	padding-top: 0.5em;
+	margin: 0;
+    box-shadow: 0 0 2em rgb(38,38,38);
+}
+
+.popup-content {
+    text-align: center;
+}
+
+.guziki {
+	background: white;
+	border: none;
+    color: rgba(38, 38, 38, 0.5);
+	font-weight: 100;
+    padding: 0.75em 1em;
+	margin: 0 1em;
+    cursor: pointer;
+	transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+	font-family: 'Inter', sans-serif;
+	font-size: 1.2em;
+	font-weight: 100;
+	line-height: 1.25em;
+}
+
+#nagl-popup {
+	width: 95%;
+	padding: 0.75em;
+	border-bottom: 1px solid rgb(38,38,38);
+}
+
+h5 {
+	font-family: 'Inter', sans-serif;
+	color:rgb(38, 38, 38);
+	font-size: 1.25em;
+	font-weight: 100;
+	line-height: 1.25em;
+	padding: 4em 0;
+}
+
+.guziki svg {
+	fill: rgba(38, 38, 38, 0.5);
+	width: 1.5em;
+	height: 1.5em;
+	vertical-align: middle;
+	margin: 0;
+	padding: 0;
+	transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.guziki:hover {
+	scale: 125%;
+    color: rgb(38, 38, 38);
+}
+
+.guziki:hover svg {
+	fill: rgb(38, 38, 38);
+}
+
+.guziki:active {
+	scale: 95%;
+}
+
 @media screen and (max-width: 1080px) {
 	h1 {font-size: calc(2.5em*0.5)}
 	h4, li {font-size: calc(1em*0.5)}
@@ -749,4 +835,3 @@ a {
 	header {background-color: white}
 	footer {background-color: white}
 }
-
