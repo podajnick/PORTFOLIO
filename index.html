@@ -15,11 +15,17 @@
         <button onclick="topFunction()" class="button" id="topButton">v</button>
 		<header class="nawigacja">
             <div class="naglowek-glowny">
+                <nav class="nav-links">
+                    <a href="#projekty" class="nav-item">Projekty</a>
+                    <a href="#o-mnie" class="nav-item">O&nbsp;mnie</a>
+                    <a href="#kontakt" class="nav-item">Kontakt</a>
+                </nav>
                 <h1>PORTFOLIO</h1>
-                <h4>inż. arch. <strong>Adam Dobrowolski</strong><img src="LOGO.svg" class="logo"/></h4>
+                <h4>inż. arch. <strong>Adam Dobrowolski</strong><img src="svg/LOGO.svg" class="logo"/></h4>
             </div>
         </header>
-        <section class="ramki">
+
+        <section id="projekty">
             <section class="siatka">
                 <figure class="menuProjekty"><a href="01.html">
                     <img src="png/projekty mini/przemysl.png"  />
@@ -78,15 +84,85 @@
                     </figcaption></a>
                 </figure>
                 <figure class="menuProjekty"><a href="08.html">
-                    <img src="png/projekty mini/dino.png"  />
+                    <img src="png/projekty mini/dino.png"/>
                     <figcaption>
                         <h2>Projekt <span><br>URBANISTYCZNY</span></h2>
                         <button class="animated-button" id="szczegoly-button">Szczegóły
                         </button>
                     </figcaption></a>
                 </figure>
+                <figure class="menuProjekty"><a href="09.html">
+                    <img src="png/projekty mini/dino.png"/>
+                    <figcaption>
+                        <h2>Projekt <span><br>X</span></h2>
+                        <button class="animated-button" id="szczegoly-button">Szczegóły
+                        </button>
+                    </figcaption></a>
+                </figure>
+                <figure class="menuProjekty"><a href="10.html">
+                    <img src="png/projekty mini/dino.png"/>
+                    <figcaption>
+                        <h2>Projekt <span><br>X</span></h2>
+                        <button class="animated-button" id="szczegoly-button">Szczegóły
+                        </button>
+                    </figcaption></a>
+                </figure>
+                <figure class="menuProjekty"><a href="11.html">
+                    <img src="png/projekty mini/dino.png"/>
+                    <figcaption>
+                        <h2>Projekt <span><br>X</span></h2>
+                        <button class="animated-button" id="szczegoly-button">Szczegóły
+                        </button>
+                    </figcaption></a>
+                </figure>
+                <figure class="menuProjekty"><a href="12.html">
+                    <img src="png/projekty mini/dino.png"/>
+                    <figcaption>
+                        <h2>Projekt <span><br>X</span></h2>
+                        <button class="animated-button" id="szczegoly-button">Szczegóły
+                        </button>
+                    </figcaption></a>
+                </figure>
             </section>
         </section>
+
+        <section class="o-mnie" id="o-mnie">
+            <div class="elementy">
+                <h3>O&nbsp;mnie</h3>
+                    <p class="opisuwa">
+                        W&nbsp;tworzeniu przyświeca mi idea rozwiązań wynikowych,
+                        gdzie decyzje podążają za racjonalnością rozwiązań.
+                        Jestem zwolennikiem jak najbardziej zoptymalizowanego procesu projektowego,
+                        stąd moje zainteresowanie parametryką jako narzędziem wszechstronnym
+                        -&nbsp;od wzornictwa (np.&nbsp;tło niniejszej strony), aż po analizy i&nbsp;istotne rozwiązania projektowe.
+                        W&nbsp;wolnych chwilach odkrywam niepopularne brzmienia w&nbsp;muzyce oraz tworzę własną.
+                        Jestem studentem ostatniego roku architektury na Politechnice Poznańskiej.
+                    </p>
+                <h3>Znajomość&nbsp;Programów</h3>
+                    <section class="programy">
+                        <button class="prog-schem" id="archicad"><img src="svg/programy/archicad.svg"/></button>
+                        <button class="prog-schem" id="sketchup"><img src="svg/programy/skepucz.svg"/></button>
+                        <button class="prog-schem" id="autocad"><img src="svg/programy/autocad.svg"/></button>
+                        <button class="prog-schem" id="qgis"><img src="svg/programy/qgis.svg"/></button>
+                        <button class="prog-schem" id="blender"><img src="svg/programy/blenderkuchenny.svg"/></button>
+                        <button class="prog-schem" id="rhino"><img src="svg/programy/rhino.svg"/></button>
+                        <button class="prog-schem" id="twinmotion"><img src="svg/programy/twin.svg"/></button>
+                        <button class="prog-schem" id="revit"><img src="svg/programy/zlokonieczne.svg"/></button>
+                    </section>
+            </div>
+        </section>
+        <section class="kontakt" id="kontakt">
+            <p class="opisuwa" id="zapraszam"><u>Zapraszam do przejrzenia moich projektów i kontaktu!</u></p>
+            <adress><ul>
+                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3.445 17.827c-3.684 1.684-9.401-9.43-5.8-11.308l1.053-.519 1.746 3.409-1.042.513c-1.095.587 1.185 5.04 2.305 4.497l1.032-.505 1.76 3.397-1.054.516z"/>
+                    </svg>+48 536 838 678</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z"/>
+                    </svg>adamdobrowolski01@gmail.com</li></ul>
+            </adress>
+        </section>
+
         <div id="popup" class="popup">
             <div class="popup-window">
                 <div class="popup-content">
@@ -110,17 +186,9 @@
                 </div>
             </div>
         </div>
+
         <footer>
-            <adress><ul>
-                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3.445 17.827c-3.684 1.684-9.401-9.43-5.8-11.308l1.053-.519 1.746 3.409-1.042.513c-1.095.587 1.185 5.04 2.305 4.497l1.032-.505 1.76 3.397-1.054.516z"/>
-                    </svg>+48 536 838 678
-                </li>
-                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z"/>
-                    </svg>adamdobrowolski01@gmail.com
-                </li>
-            </ul></adress>
+            <h6> &copy; PORTFOLIO | Adam Dobrowolski<span id="currentYear"></span></h6>
         </footer>
         <script src="app.js"></script>
     </body>
