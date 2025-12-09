@@ -12,7 +12,7 @@ body {
 
 h1 {
 	font-style: normal;
-	font-size: 2.5em;
+	font-size: 2.75em;
 	margin: 0;
 	padding: 0;
 	color: rgb(38,38,38);
@@ -49,42 +49,46 @@ strong {
 	width: 94%;
 	z-index: 100;
 	border-bottom: 3px solid rgb(38,38,38);
+	background: white;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-item {
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;
+    border-radius: 5px;
+	display: inline-block;
+	margin: 0 1em;
+	padding: 0;
+	color: rgba(38,38,38, 0.25);
+}
+
+.nav-item:hover,
+.nav-item:focus {
+	color: rgb(38,38,38);
+	scale: 120%;
+}
+
+.nav-item:active {
+	scale: 85%;
+}
+
+.naglowek-glowny svg {
+	fill: rgb(38, 38, 38);
 }
 
 .naglowek-glowny {
 	display: flex;
 	justify-content: space-between;
-	width: 61.8%;
+	width: 85%;
     margin: 0 auto;
-}
-
-.klikajki {
-	text-align: center;
-}
-
-.klikajki a {
-	display: inline-block;
-	margin: 0 10px;
-	padding: 0 1.5em;
-	color: rgb(218,218,218);
-}
-
-.klikajki a:hover,
-.klikajki a:focus {
-	color: rgb(38,38,38);
-}
-
-.ramki {
-	position: relative;
-	background: none;
-	height: 90vh;
-	width: 90%;
-	right: 0;
-	left: 0;
-	margin: 6vh auto;
-	padding: 0;
-	border-left: 1px solid rgba(38,38,38, 0.5);
-	border-right: 1px solid rgba(38,38,38, 0.5)
+    align-items: center;
 }
 
 footer {
@@ -97,69 +101,68 @@ footer {
 	z-index: 100;
 	left: 0;
 	right: 0;
-	border-top: 3px solid rgb(38,38,38);
+	border-top: 1px solid rgb(38,38,38);
+	background: white;
 }
 
-ul {
-    width: 61.8%;
-    margin: 0 auto;
-    list-style: none;
-	padding: 1em 0;
+h6 {
+	font-family: 'Inter', sans-serif;
 	display: flex;
-	justify-content: space-between;
-}
-
-li {
-    font-size: 1em;
-	font-weight: 600;
-    letter-spacing: 0.1em;
-	color: rgb(38,38,38);
-}
-
-ul svg {
-	fill: rgb(38,38,38);
-    width: 2em;
-    height: auto;
-    margin-right: 0.75em;
-    vertical-align: middle;
+	align-items: center;
+    font-size: 0.65em;
+	font-weight: 100;
+    padding: 0;
+	margin: 0;
+	padding-top: 0.3em;
+    color: rgb(38,38,38);
+	justify-content: center;
+	height: 1.2em;
 }
 
 #topButton {
-	width: 2em;
-	height: 2em;
+	width: 1.5em;
+	height: 1.5em;
 	display: none;
 	position: fixed;
 	bottom: 4em;
 	right: 3em;
 	z-index: 99;
-	border: 3px solid rgb(38,38,38);
+	border: 3px solid rgb(38, 38, 38);
 	border-radius: 50%;
 	outline: none;
 	cursor: pointer;
 	padding: 0;
 	margin: 0;
-	font-weight: bold;
 	text-transform: uppercase;
 	background-color: transparent;
 	font-family: 'Inter', sans-serif;
 	font-size: 2em;
-    color: rgb(38,38,38);
+    color: rgb(38, 38, 38);
 	text-align: center;
 	vertical-align: middle;
+	opacity: 50%;
 	rotate: 180deg;
+    transition: all 0.3s ease;
 }
 
 #topButton:hover {
-	background-color: rgb(102,102,102);
+	scale: 120%;
+	opacity: 100%;
 }
 
+#topButton:active {
+	scale: 90%;
+}
 
 
 /* SIATKA *//* SIATKA *//* SIATKA *//* SIATKA *//* SIATKA *//* SIATKA *//* SIATKA *//* SIATKA *//* SIATKA */
 
+#projekty {
+	height: 100vh;
+}
 
 section.siatka {
-	padding-top: 7em;
+	padding-top: 8em;
 	list-style: none;
 	text-align: center;
 	width: 61.8%;
@@ -289,8 +292,98 @@ figure:active {
 	-webkit-transition: scale 1ms;
 }
 
+.o-mnie {
+	width: 94%;
+	margin: 0 auto;
+	padding: 6em 0;
+}
+
+.elementy {
+	width: 61.8%;
+	margin: 0 auto;
+}
+
+.opisuwa {
+	font-size: 1.2em;
+	line-height: 1.75em;
+	text-align: justify;
+	text-indent: 2em;
+	padding-bottom: 4em;
+}
+
+h3 {
+	font-family: 'Inter', sans-serif;
+	font-weight: 600;
+	font-size: 1.6em;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 0;
+}
+
+.programy {
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+}
+
+.prog-schem {
+	border: none;
+	background: none;
+	margin: 2em auto;
+	transition: all 0.3s;
+	cursor: help;
+}
+
+.programy img {
+	height: 5em;
+	width: auto;
+	display: flex;
+	transition: all 0.3s;
+	position: relative;
+}
+
+.prog-schem:hover img {
+	fill: rgba(255,255,255, 1);
+	scale: 125%;
+}
+
+#zapraszam {
+	text-indent: 0;
+	font-size: 1em;
+	text-align: center;
+	font-weight: 600;
+}
+
+.kontakt {
+	height: 80vh;
+}
+
+ul {
+    width: 61.8%;
+    margin: 0 auto;
+    list-style: none;
+	padding: 0;
+	padding-top: 1em;
+	display: flex;
+	justify-content: space-between;
+}
+
+li {
+    font-size: 1.25em;
+	font-weight: 100;
+    letter-spacing: 0.1em;
+	color: rgb(38,38,38);
+}
+
+ul svg {
+	fill: rgb(38,38,38);
+    width: 2em;
+    height: auto;
+    margin-right: 0.75em;
+    vertical-align: middle;
+}
+
 .nowe-okno {
-	background-color: rgba(38,38,38, 0.75);
+	background-color: rgba(38,38,38, 0.8);
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -307,6 +400,7 @@ figure:active {
 	margin: 5em auto;
 	padding-bottom: 2em;
 	box-shadow: 0.5em 0.5em 2em rgb(38,38,38);
+	opacity: 85%;
 }
 
 .okno-projekt h1 {
