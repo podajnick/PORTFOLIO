@@ -12,8 +12,17 @@
 		<link rel="stylesheet" type="text/css" href="style.css"/>
 	</head>
 	<body>
+        <button onclick="topFunction()" class="button" id="topButton">v</button>
 		<header class="nawigacja">
-            <div class="naglowek-glowny"><h1>PORTFOLIO</h1><h4>inż. arch. <strong>Adam Dobrowolski</strong><img src="LOGO.svg" class="logo"/></h4></div>
+            <div class="naglowek-glowny">
+                <nav class="nav-links">
+                    <a href="#projekty" class="nav-item">Projekty</a>
+                    <a href="#o-mnie" class="nav-item">O&nbsp;mnie</a>
+                    <a href="#kontakt" class="nav-item">Kontakt</a>
+                </nav>
+                <h1>PORTFOLIO</h1>
+                <h4>inż. arch. <strong>Adam Dobrowolski</strong><img src="svg/LOGO.svg" class="logo"/></h4>
+            </div>
         </header>
         <section class="nowe-okno">
             <div class="okno-projekt">
@@ -130,5 +139,4 @@
         </section>
         <script src="app.js"></script>
     </body>
-
 </html>
