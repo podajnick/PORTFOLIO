@@ -333,7 +333,7 @@ h3 {
 	cursor: help;
 }
 
-.programy img {
+.prog-schem-img {
 	height: 5em;
 	width: auto;
 	display: flex;
@@ -341,9 +341,33 @@ h3 {
 	position: relative;
 }
 
-.prog-schem:hover img {
+.prog-schem:hover .prog-schem-img {
 	fill: rgba(255,255,255, 1);
 	scale: 125%;
+}
+
+.prog-schem:hover .tooltip {
+	opacity: 1;
+	position: absolute;
+	z-index: 1000;
+}
+
+#prog-info {
+	text-align: left;
+}
+
+#prog-info strong {
+	font-size: 2em;
+}
+
+.prog-schem ul {
+	font-size: 1.2em;
+	line-height: 1.5em;
+}
+
+strong img {
+	height: 1.75em;
+	vertical-align: middle;
 }
 
 #zapraszam {
@@ -357,7 +381,7 @@ h3 {
 	height: 80vh;
 }
 
-ul {
+address ul {
     width: 61.8%;
     margin: 0 auto;
     list-style: none;
@@ -367,14 +391,14 @@ ul {
 	justify-content: space-between;
 }
 
-li {
+address li {
     font-size: 1.25em;
 	font-weight: 100;
     letter-spacing: 0.1em;
 	color: rgb(38,38,38);
 }
 
-ul svg {
+address ul svg {
 	fill: rgb(38,38,38);
     width: 2em;
     height: auto;
