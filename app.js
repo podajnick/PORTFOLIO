@@ -9,6 +9,15 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    const yearElement = document.querySelector("#currentYear");
+      if (yearElement) {
+          const now = new Date();
+          const currentYear = now.getFullYear();
+          yearElement.textContent = currentYear;
+      }
+});
+
 function skopiujLink() {
     const copyText = document.querySelector("#linkDoSkopiowania");
 
@@ -20,18 +29,42 @@ function skopiujLink() {
     });
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+  const navItems = document.querySelectorAll('.nav-links a');
+    
+  navItems.forEach(item => {
+    item.addEventListener('click', function(e) {
+      e.preventDefault();
+            
+    const targetId = this.getAttribute('href');
+    const targetElement = document.querySelector(targetId);
+              
+      if (targetElement) {
+        const headerHeight = document.querySelector('.nawigacja').offsetHeight;
+        const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+        const offsetPosition = elementPosition - headerHeight;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+})
+
 //top-button //top-button //top-button //top-button //top-button //top-button //top-button //top-button //top-button //top-button
 //_______________________________________________________________________________________________________________________________
 
-let mybutton = document.getElementById("topButton");
+let topButton = document.getElementById("topButton");
 
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    mybutton.style.display = "block";
+    topButton.style.display = "block";
   } else {
-    mybutton.style.display = "none";
+    topButton.style.display = "none";
   }
 }
 
