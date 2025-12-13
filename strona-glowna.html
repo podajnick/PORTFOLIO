@@ -20,8 +20,8 @@
                     <a href="#o-mnie" class="nav-item">O&nbsp;mnie</a>
                     <a href="#kontakt" class="nav-item">Kontakt</a>
                 </nav>
-                <h1>PORTFOLIO</h1>
-                <h4>inż. arch. <strong>Adam Dobrowolski</strong><img src="svg/LOGO.svg" class="logo"/></h4>
+                <a href="https://podajnick.github.io/PORTFOLIO/"><h1>PORTFOLIO</h1></a>
+                <a href="https://podajnick.github.io/PORTFOLIO/"><h4>inż. arch. <strong>Adam Dobrowolski</strong><img src="svg/LOGO.svg" class="logo"/></h4></a>
             </div>
         </header>
 
@@ -129,7 +129,7 @@
         <section class="o-mnie" id="o-mnie">
             <div class="elementy">
                 <h3>O&nbsp;mnie</h3>
-                    <p class="opisuwa">
+                    <p class="opisuwa"><img src="png/ja 956x1195.png"/>
                         W&nbsp;tworzeniu przyświeca mi idea rozwiązań wynikowych,
                         gdzie decyzje podążają za racjonalnością rozwiązań.
                         Jestem zwolennikiem jak najbardziej zoptymalizowanego procesu projektowego,
@@ -215,19 +215,27 @@
             </div>
         </section>
         <section class="kontakt" id="kontakt">
-            <p class="opisuwa" id="zapraszam"><u>Zapraszam do przejrzenia moich projektów i kontaktu!</u></p>
+            <p id="zapraszam"><u>Zapraszam do obejrzenia moich projektów i kontaktu!</u></p>
             <address><ul>
-                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3.445 17.827c-3.684 1.684-9.401-9.43-5.8-11.308l1.053-.519 1.746 3.409-1.042.513c-1.095.587 1.185 5.04 2.305 4.497l1.032-.505 1.76 3.397-1.054.516z"/>
-                    </svg>+48 536 838 678</li>
-                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z"/>
-                    </svg>adamdobrowolski01@gmail.com</li></ul>
+                <li class=skontaktuj onclick="skopiujLinkTel()">
+                    <input class="invi" type="text" id="telKopiuj" value="+48536838678" readonly/>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3.445 17.827c-3.684 1.684-9.401-9.43-5.8-11.308l1.053-.519 1.746 3.409-1.042.513c-1.095.587 1.185 5.04 2.305 4.497l1.032-.505 1.76 3.397-1.054.516z"/>
+                        </svg>
+                        +48 536 838 678
+                    </li>
+                <li class=skontaktuj onclick="skopiujLinkMail()">
+                    <input class="invi" type="text" id="mailKopiuj" value="adamdobrowolski01@gmail.com" readonly/>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z"/>
+                        </svg>
+                        adamdobrowolski01@gmail.com
+                    </li></ul>
             </address>
         </section>
 
         <footer>
-            <h6> &copy; PORTFOLIO | Adam Dobrowolski<span id="currentYear"></span></h6>
+            <h6>&copy;<span id="currentYear"></span>PORTFOLIO | Adam Dobrowolski</h6>
         </footer>
         <script src="app.js"></script>
     </body>
