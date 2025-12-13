@@ -158,7 +158,7 @@ h6 {
 /* SIATKA *//* SIATKA *//* SIATKA *//* SIATKA *//* SIATKA *//* SIATKA *//* SIATKA *//* SIATKA *//* SIATKA */
 
 #projekty {
-	height: 100vh;
+	margin-bottom: 7em
 }
 
 section.siatka {
@@ -190,7 +190,7 @@ section.siatka {
 	position: relative;
 	min-height: 100%;
 	max-width: 100%;
-	filter: grayscale(100%);
+	filter: grayscale(50%);
 }
 
 .siatka figure figcaption {
@@ -221,7 +221,7 @@ section.siatka {
 }
 
 figure.menuProjekty img {
-	opacity: 0;  /* przeswit przed najechaniem */
+	opacity: 0.1;  /* przeswit przed najechaniem */
 	-webkit-transition: opacity 2s;
 	transition: opacity 2s;
 }
@@ -278,7 +278,7 @@ figure.menuProjekty:hover {
 
 figure:hover {
 	display: absolute;
-	scale: 165%;
+	scale: 145%;
 	z-index: 10000;
 	border: 1px solid rgb(38,38,38);
 	box-shadow: 0.5em 0.5em 2em rgb(38,38,38);
@@ -295,7 +295,7 @@ figure:active {
 .o-mnie {
 	width: 94%;
 	margin: 0 auto;
-	padding: 6em 0;
+	padding: 4em 0;
 }
 
 .elementy {
@@ -304,11 +304,30 @@ figure:active {
 }
 
 .opisuwa {
+	display: flex;
 	font-size: 1.2em;
 	line-height: 1.75em;
 	text-align: justify;
 	text-indent: 2em;
-	padding-bottom: 4em;
+	padding: 0;
+	margin-bottom: 4em;
+	background: none;
+	transition: all 0.3s;
+}
+
+.opisuwa img {
+	height: calc(0.19*1195px);
+	width: calc(0.19*956px);
+	margin: 0;
+	padding: 0;
+	padding-right: 1.25em;
+	opacity: 0.75;
+	filter: grayscale(100%);
+}
+
+.opisuwa:hover {
+	scale: 105%;
+	background: white;
 }
 
 h3 {
@@ -330,7 +349,6 @@ h3 {
 	background: none;
 	margin: 2em auto;
 	transition: all 0.3s;
-	cursor: help;
 }
 
 .prog-schem-img {
@@ -371,10 +389,12 @@ strong img {
 }
 
 #zapraszam {
-	text-indent: 0;
 	font-size: 1em;
 	text-align: center;
 	font-weight: 600;
+	line-height: 1.75em;
+	background: none;
+	padding-bottom: 1em;
 }
 
 .kontakt {
@@ -388,11 +408,11 @@ address ul {
 	padding: 0;
 	padding-top: 1em;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
 address li {
-    font-size: 1.25em;
+    font-size: 1em;
 	font-weight: 100;
 	font-style: normal;
     letter-spacing: 0.1em;
@@ -405,6 +425,20 @@ address ul svg {
     height: auto;
     margin-right: 0.75em;
     vertical-align: middle;
+}
+
+.skontaktuj {
+	transition: all 0.3s;
+}
+
+.skontaktuj:hover {
+	scale: 105%;
+	background: white;
+	cursor: pointer;
+}
+
+.skontaktuj:active {
+	scale: 95%;
 }
 
 .nowe-okno {
@@ -425,7 +459,6 @@ address ul svg {
 	margin: 5em auto;
 	padding-bottom: 2em;
 	box-shadow: 0.5em 0.5em 2em rgb(38,38,38);
-	opacity: 85%;
 }
 
 .okno-projekt h1 {
@@ -939,6 +972,12 @@ html {
 }
 
 @media screen and (max-width: 1080px) {
+	section.siatka {
+		grid-template-columns: 100%;
+		justify-content: center;
+		padding: 0;
+		margin: 0 auto;
+	}
 	h1 {font-size: calc(2.5em*0.5)}
 	h4, li {font-size: calc(1em*0.5)}
 	svg {width: 50%; height: 50%}
@@ -954,12 +993,6 @@ html {
 }
 
 @media screen and (max-width: 1600px) {
-	section.siatka {
-		grid-template-columns: 100%;
-		justify-content: center;
-		padding: 0;
-		margin: 0 auto;
-	}
 	html {background: none}
 	.ramki {border: none}
 	figure:hover {scale: 115%}
